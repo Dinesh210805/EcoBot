@@ -1,7 +1,14 @@
 import json
+import os
 from typing import Optional
 from pathlib import Path
+
+# Silence chromadb telemetry error prints
+import logging
+logging.getLogger("chromadb.telemetry").setLevel(logging.CRITICAL)
+
 import chromadb
+from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 from backend.config import get_settings
 
@@ -18,7 +25,10 @@ def get_client() -> chromadb.PersistentClient:
     global _client
     if _client is None:
         Path(settings.chroma_db_path).mkdir(parents=True, exist_ok=True)
-        _client = chromadb.PersistentClient(path=settings.chroma_db_path)
+        _client = chromadb.PersistentClient(
+            path=settings.chroma_db_path,
+            settings=Settings(anonymized_telemetry=False)
+        )
     return _client
 
 

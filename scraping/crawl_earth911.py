@@ -29,8 +29,7 @@ def url_to_slug(url: str) -> str:
 
 async def crawl_one(crawler: AsyncWebCrawler, url: str) -> str | None:
     config = CrawlerRunConfig(
-        page_timeout=30000,
-        wait_for="css:article, css:.entry-content, css:.post-content",
+        page_timeout=45000,
         remove_overlay_elements=True,
         excluded_tags=["nav", "footer", "header", "aside", "script", "style"],
         verbose=False,

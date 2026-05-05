@@ -7,6 +7,8 @@ class Settings(BaseSettings):
 
     # LLM APIs
     groq_api_key: str
+    groq_api_key_2: str = ""
+    groq_api_key_3: str = ""
     gemini_api_key: str
     exa_api_key: str
 
@@ -16,9 +18,9 @@ class Settings(BaseSettings):
     ollama_model: str = "ecobot-classifier"
 
     # Groq model names
-    groq_response_model: str = "llama3-70b-8192"
+    groq_response_model: str = "llama-3.3-70b-versatile"
     groq_vision_model: str = "meta-llama/llama-4-scout-17b-16e-instruct"
-    groq_classifier_model: str = "llama3-70b-8192"
+    groq_classifier_model: str = "llama-3.3-70b-versatile"
 
     # Databases
     sqlite_db_path: str = "./data/ecobot.db"

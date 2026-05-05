@@ -1,0 +1,2489 @@
+[
+  {
+    "item": "Acrylic Plaques and Awards",
+    "aliases": [
+      "Acrylic Awards",
+      "Polymethyl Methacrylate (PMMA)"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable",
+    "recyclable": false,
+    "reason": "Acrylic plaques and awards are not typically accepted by local transfer stations and require special recycling facilities, but they can be recycled through industrial recycling processes that break down the plastic through pyrolysis.",
+    "preparation_steps": [
+      "Separate acrylic from wood or metal components",
+      "Recycle wood components separately through wood recycling options",
+      "Recycle metal components separately through metal recycling options"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "acrylic-plaques-and-awards.md"
+  },
+  {
+    "item": "Aerosol Cans",
+    "aliases": [
+      "Spray Cans"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Household Hazardous Waste",
+    "recyclable": true,
+    "reason": "Aerosol cans are made of high-value metals like aluminum or steel that can be infinitely recycled, but their pressurized air and potentially hazardous contents require special handling and disposal.",
+    "preparation_steps": [
+      "Use up all the product inside the can",
+      "Remove the plastic cap and recycle it separately",
+      "Do not puncture a hole in the can or attempt to remove the spray nozzle"
+    ],
+    "safety_notes": "Do not puncture or attempt to crush the can, as it may explode and cause injury",
+    "special_facility_required": true,
+    "source_file": "aerosol-cans.md"
+  },
+  {
+    "item": "Aluminum Cans",
+    "aliases": [
+      "Tin Cans",
+      "Soda Cans"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Aluminum cans are widely accepted in curbside recycling programs and can be recycled over and over again, saving up to 95% of the energy necessary to make a can from virgin aluminum.",
+    "preparation_steps": [
+      "Rinse the can to remove any food or liquid residue",
+      "Crush the can to save space in the recycling bin",
+      "Remove any lids or labels, as they may be made of a different material"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "aluminum-cans.md"
+  },
+  {
+    "item": "Aluminum Foil",
+    "aliases": [
+      "Foil"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Aluminum foil is made from the same material as soda cans and can be reprocessed into new aluminum, but it is usually contaminated with food waste or blended with plastic, so it requires special handling and cannot be recycled in all curbside bins.",
+    "preparation_steps": [
+      "Clean the aluminum foil to remove any food waste or debris",
+      "Check with your local recycling program to confirm acceptance and requirements",
+      "Take the clean aluminum foil to a designated drop-off location or transfer station"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "aluminum-foil.md"
+  },
+  {
+    "item": "Automotive Fluids",
+    "aliases": [
+      "Motor Oil",
+      "Transmission Fluid",
+      "Power Steering Fluid",
+      "Gear Oil",
+      "Antifreeze"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Many automotive fluids like transmission fluid, power steering fluid, gear oil, motor oil, and antifreeze can be processed and recycled into new fluids, preserving local water and soil health by keeping them out of landfills and drains.",
+    "preparation_steps": [
+      "Drain fluids from your vehicle",
+      "Place each fluid in a separate container for transportation, do not mix them",
+      "Use original motor oil bottles, household containers with secure lids, or sealed specialty containers available at most auto parts stores"
+    ],
+    "safety_notes": "Improper disposal of used motor oil and other auto fluids can contaminate drinking water and soil, and is considered hazardous waste by many state and local governments.",
+    "special_facility_required": true,
+    "source_file": "automotive-fluids.md"
+  },
+  {
+    "item": "plastic shampoo bottle",
+    "aliases": [
+      "shampoo container",
+      "lotion bottle"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic bottles marked #1 or #2, such as shampoo and lotion bottles, are widely accepted for recycling and can be placed in the dry waste bin for processing.",
+    "preparation_steps": [
+      "Rinse the bottle to remove any remaining product",
+      "Remove any pumps or caps, as they may not be recyclable",
+      "Place the bottle in the recycling bin"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "bathroom-products.md"
+  },
+  {
+    "item": "Books and Magazines",
+    "aliases": [
+      "Mixed Paper",
+      "Catalogs",
+      "Phone Books"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Books and magazines are made of mixed paper, which can be recycled at most paper mills in the U.S., helping to save landfill space, oil, trees, energy, and water.",
+    "preparation_steps": [
+      "Leave magazines whole, including staples, cardstock ads, and perfume samples",
+      "Remove plastic bags from magazines and recycle them separately",
+      "Recycle paperback books whole, including the binding",
+      "Remove covers from hardcover books before recycling"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "books-magazines.md"
+  },
+  {
+    "item": "car batteries",
+    "aliases": [
+      "lead-acid batteries",
+      "auto batteries"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Car batteries contain lead and other hazardous materials that can be recycled and reused, with a recycling rate of 98 to 99 percent in the U.S.",
+    "preparation_steps": [
+      "Return the old car battery to the dealership or store where you are purchasing your replacement",
+      "Check with local scrap yards or auto parts retailers to see if they accept car batteries for recycling",
+      "Participate in a community recycling program or event that accepts hazardous waste"
+    ],
+    "safety_notes": "Handle car batteries with care, as they contain lead and acid that can be hazardous to your health and the environment",
+    "special_facility_required": true,
+    "source_file": "car-batteries.md"
+  },
+  {
+    "item": "Cardboard",
+    "aliases": [
+      "Corrugated Cardboard",
+      "Paperboard"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cardboard is a high-value grade of paper with long paper fibers, making it highly recyclable and widely accepted in curbside recycling programs, with over 92.9 percent being recycled in 2015.",
+    "preparation_steps": [
+      "Remove any shipping materials such as packing peanuts, plastic bags, and bubble wrap",
+      "Cut any tape used to seal the top and/or bottom of the box, then collapse the box",
+      "Fold or cut the flattened box in half if necessary, and cut out any food contamination before recycling"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cardboard.md"
+  },
+  {
+    "item": "carpet",
+    "aliases": [
+      "flooring"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Bulk Waste",
+    "recyclable": true,
+    "reason": "Carpet is made from multiple components with different chemical makeups, making it tough to recycle properly, but nearly all types of carpet can be recycled through special facilities.",
+    "preparation_steps": [
+      "Remove any furniture or objects attached to the carpet",
+      "Roll up the carpet to make it easier to transport",
+      "Check with local recycling facilities to see if they accept carpet and carpet padding"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "carpet.md"
+  },
+  {
+    "item": "cartons",
+    "aliases": [
+      "milk cartons",
+      "juice cartons",
+      "soy cartons",
+      "soup cartons"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cartons are made mainly from paper, a renewable resource, and are a valuable source of material to make products like tissue, paper towel, and even building materials.",
+    "preparation_steps": [
+      "Remove plastic lids, caps, and straws from cartons",
+      "Rinse empty cartons",
+      "Check with your local program for specific recycling directions"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cartons.md"
+  },
+  {
+    "item": "CDs and Tapes",
+    "aliases": [
+      "Compact Discs",
+      "Cassette Tapes",
+      "VHS Tapes",
+      "DVDs"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable",
+    "recyclable": false,
+    "reason": "CDs and tapes are made of a mixture of different plastic resins, including polystyrene, polycarbonate, polypropylene, and polyethylene terephthalate, which are not widely accepted by curbside recycling programs due to limited market demand.",
+    "preparation_steps": [
+      "Remove any paper sleeves or inserts, as these can be recycled with other paper",
+      "Consider donating or selling CDs and tapes to secondhand stores or online marketplaces",
+      "If recycling, ensure CDs and tapes are clean and free of debris"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "cds-tapes.md"
+  },
+  {
+    "item": "cell phone",
+    "aliases": [
+      "mobile phone",
+      "smartphone"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Cell phones contain hazardous materials like lithium-ion batteries and require special transportation for recycling, making them unsuitable for regular waste streams and necessitating proper disposal through designated e-waste channels.",
+    "preparation_steps": [
+      "Transfer data from the old phone to the new one, with possible assistance from the store.",
+      "Factory reset the phone to remove all personal data and consider removing the SIM card as an added precaution.",
+      "Remove the cell phone battery, especially if it's a lithium-ion battery, as it requires special handling for recycling."
+    ],
+    "safety_notes": "Handle cell phone batteries with care, as they can be hazardous if not disposed of properly.",
+    "special_facility_required": true,
+    "source_file": "cell-phones.md"
+  },
+  {
+    "item": "CFLs",
+    "aliases": [
+      "Compact Fluorescent Lightbulbs"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "CFLs contain 4 milligrams of mercury, which is harmless when the bulb is intact but potentially toxic if the bulb breaks in a landfill and enters the water stream, so recycling them is crucial to prevent mercury pollution and conserve this precious metal.",
+    "preparation_steps": [
+      "Unplug the lamp to prevent electrocution when removing a burnt-out CFL",
+      "Put the CFL in a plastic zipper bag to prevent any mercury from leaking if it breaks during transportation",
+      "Do not pack multiple CFLs in the same bag, as this will increase the chance of them breaking"
+    ],
+    "safety_notes": "If the bulb breaks, follow proper clean-up procedures to prevent mercury exposure",
+    "special_facility_required": true,
+    "source_file": "cfls.md"
+  },
+  {
+    "item": "Christmas Trees",
+    "aliases": [
+      "Real Christmas Trees",
+      "Live Christmas Trees"
+    ],
+    "category": "wet_waste",
+    "bin_color": "green",
+    "bin_label": "Yard Waste",
+    "recyclable": true,
+    "reason": "Christmas trees can be recycled into mulch, which is often provided free of charge to citizens for their gardens, and helps to reduce the production of methane in landfills.",
+    "preparation_steps": [
+      "Remove any ornaments, lights, tinsel or other decorations from the tree, as well as the stand.",
+      "Use a tarp under the tree before hauling it to the curb or your car to prevent needles from shedding on the floor.",
+      "Cut large trees (taller than 5 feet) in half so they will fit in the truck, if necessary."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "christmas-trees.md"
+  },
+  {
+    "item": "Clothing and Accessories",
+    "aliases": [
+      "Clothing",
+      "Accessories",
+      "Textiles"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Clothing and accessories can be recycled through various channels, including clothing swaps, consignment stores, thrift stores, and specialized clothing recycling programs.",
+    "preparation_steps": [
+      "Sort clothing into great condition, good condition, and poor condition",
+      "Donate great-condition clothing to consignment stores or clothing swaps",
+      "Donate good-condition clothing to thrift stores or charity donations",
+      "Recycle poor-condition clothing through specialized clothing recycling programs"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "clothing-accessories.md"
+  },
+  {
+    "item": "Computer Monitor",
+    "aliases": [
+      "CRT Monitor",
+      "LCD Screen"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Computer monitors contain toxic metals like lead and mercury, which need to be handled carefully and recycled responsibly.",
+    "preparation_steps": [
+      "Unplug the DVI, HDMI or VGA cable from your monitor (as well as the CPU) to lighten the load and prevent tripping.",
+      "Use a dolly or a rolling chair to transport the monitor to your car.",
+      "Place a towel or blanket down in the car and put the monitor face down on top."
+    ],
+    "safety_notes": "Handle with care, as CRT monitors can be heavy and fragile.",
+    "special_facility_required": true,
+    "source_file": "computer-monitors.md"
+  },
+  {
+    "item": "Computers",
+    "aliases": [
+      "Laptops",
+      "Desktop Computers"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Computers contain valuable metals like gold, silver, and platinum that can be recovered and reused. They also contain hazardous materials that require special handling.",
+    "preparation_steps": [
+      "Remove all data from your computer to prevent identity theft.",
+      "Unplug the computer peripherals (keyboard, speakers, etc.) from your desktop or laptop.",
+      "For a laptop, flip it over and see if you can remove the battery."
+    ],
+    "safety_notes": "Lithium-ion batteries require special transportation for recycling.",
+    "special_facility_required": true,
+    "source_file": "computers.md"
+  },
+  {
+    "item": "Construction Waste",
+    "aliases": [
+      "Construction and Demolition (C&D) Materials"
+    ],
+    "category": "construction",
+    "bin_color": "grey",
+    "bin_label": "Construction Waste",
+    "recyclable": true,
+    "reason": "Construction waste can be recycled, but it's often bulky and heavy, so it's best to check local options for curbside recycling or use a service that sorts and recycles it for you.",
+    "preparation_steps": [
+      "Check local options for curbside recycling or use a service that sorts and recycles construction waste for you.",
+      "Sort construction waste into different materials like wood, metal, bricks, and glass.",
+      "Remove any hazardous materials like chemicals or paint."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "construction-waste.md"
+  },
+  {
+    "item": "Cooking Oil",
+    "aliases": [
+      "Used Cooking Oil",
+      "UCO",
+      "Vegetable Oil"
+    ],
+    "category": "wet_waste",
+    "bin_color": "green",
+    "bin_label": "Wet Waste",
+    "recyclable": true,
+    "reason": "Used cooking oil can be recycled to protect your plumbing, support renewable energy production, and keep harmful waste out of sewers.",
+    "preparation_steps": [
+      "Designate a container (e.g. metal coffee can, plastic butter container, or original oil bottle) and label it clearly.",
+      "Allow the oil to cool completely before handling.",
+      "Strain out large food particles to prepare the oil for recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cooking-oil.md"
+  },
+  {
+    "item": "Cookware",
+    "aliases": [
+      "Pots and Pans",
+      "Cooking Utensils"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cookware can be recycled if it is made from ferrous or non-ferrous metal, such as aluminum, copper, or stainless steel.",
+    "preparation_steps": [
+      "Check if your cookware is made from ferrous or non-ferrous metal.",
+      "Remove any non-stick components, if possible.",
+      "Clean and dry the cookware before recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cookware.md"
+  },
+  {
+    "item": "Corks",
+    "aliases": [
+      "Wine Corks",
+      "Cork Stoppers"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Corks can be recycled through specialized collection programs or mail-in options, helping to conserve natural resources and reduce waste.",
+    "preparation_steps": [
+      "Look for a Cork ReHarvest or Recork collection point near you or use the Recycling Locator to find a drop-off location.",
+      "If you have a large quantity of cork to recycle, consider using a for-pay zero-waste box from TerraCycle."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "corks.md"
+  },
+  {
+    "item": "Frozen Food Boxes",
+    "aliases": [
+      "Frozen Food Packaging",
+      "TV Dinner Boxes"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "The plastic coating on frozen food boxes makes the paperboard underneath impossible to recycle in the standard pulp process.",
+    "preparation_steps": [
+      "Check if the frozen food box is made of a recyclable material, such as cardboard or a bioplastic coating.",
+      "If the box is coated with a plastic or waxy coating, it is not recyclable."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "frozen-food-boxes.md"
+  },
+  {
+    "item": "Furniture",
+    "aliases": [
+      "Household furniture",
+      "Old furniture"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Bulk Waste",
+    "recyclable": false,
+    "reason": "Furniture is not typically recyclable, but can be donated or repaired if possible. As a last resort, it can be recycled as bulk waste.",
+    "preparation_steps": [
+      "Remove all personal items from the furniture",
+      "Determine the base material of the furniture",
+      "Contact a scrap metal dealer for metal furniture",
+      "Call a local secondhand store to see if the furniture can be donated",
+      "Schedule bulk waste collection if no other options are available"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "furniture.md"
+  },
+  {
+    "item": "Glass",
+    "aliases": [
+      "Container Glass",
+      "Windows",
+      "Mirrors",
+      "Light Bulbs",
+      "Glassware"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Glass is largely comprised of sand, which is in higher supply than metal or oil used to make other products. Much of the glass that we recycle is also downcycled into products like tile or shingles, where it can be cheaper to use virgin material.",
+    "preparation_steps": [
+      "Do your best to prevent glass from breaking.",
+      "Wrap broken glass in a plastic bag before throwing it away to prevent injury to sanitation workers.",
+      "For windows and mirrors, find a construction and demolition (C&D) recycler to process the material."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "glass.md"
+  },
+  {
+    "item": "Household Cleaners",
+    "aliases": [
+      "Cleaning Products",
+      "Cleaning Supplies"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": false,
+    "reason": "Household cleaners can be hazardous to the environment if disposed of improperly. Check the label or contact your local household hazardous waste facility for proper disposal instructions.",
+    "preparation_steps": [
+      "Check the label for proper disposal instructions",
+      "Empty any unused product prior to recycling or disposal",
+      "Contact the manufacturer or local waste disposal facility for specific guidance"
+    ],
+    "safety_notes": "Some household cleaning materials are considered hazardous to the environment if disposed of improperly. Check the label or contact your local household hazardous waste facility for proper disposal instructions.",
+    "special_facility_required": true,
+    "source_file": "household-cleaners.md"
+  },
+  {
+    "item": "Items Containing Mercury",
+    "aliases": [
+      "Mercury-Containing Products",
+      "Mercury Products"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Household Hazardous Waste",
+    "recyclable": false,
+    "reason": "Mercury-containing products are not recyclable, but can be disposed of through local household hazardous waste facilities or events.",
+    "preparation_steps": [
+      "Check with your local household hazardous waste facility for specific guidelines and accepted items.",
+      "Remove any batteries or other components that may be recyclable separately."
+    ],
+    "safety_notes": "Mercury is a toxic substance that can cause serious health hazards if not handled properly. Wear protective gear and follow local guidelines for safe disposal.",
+    "special_facility_required": true,
+    "source_file": "items-containing-mercury.md"
+  },
+  {
+    "item": "Large Electronics",
+    "aliases": [
+      "Big-screen TVs",
+      "Office copiers/printers",
+      "Audio receivers/amplifiers"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Large electronics contain hazardous metals like lead and mercury, which are toxic if released in the environment. Recycling them helps to prevent environmental pollution.",
+    "preparation_steps": [
+      "Restore factory settings to delete personal data",
+      "Unplug and bundle cords",
+      "Donate working items",
+      "Use a dolly for transport"
+    ],
+    "safety_notes": "Electronics with cathode ray tubes (CRTs) contain hazardous metals like lead and mercury.",
+    "special_facility_required": true,
+    "source_file": "large-electronics.md"
+  },
+  {
+    "item": "LED Light Bulbs",
+    "aliases": [
+      "LED Bulbs",
+      "Light Emitting Diode Bulbs"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "The glass, metal, and plastic used in LED bulbs are recyclable, and reusing these finite, non-renewable resources helps conserve the EarthÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s resources and reduces the volume of waste sent to landfills.",
+    "preparation_steps": [
+      "Turn off the lamp or light before removing the LED bulb from the fixture.",
+      "Wrap each bulb separately in a plastic bag to reduce breakage and to protect workers if bulbs do break, if required by the recycler.",
+      "Remove string lights from the display before sending or dropping off the cord and lights for recycling."
+    ],
+    "safety_notes": "Some components may not be recyclable by every facility due to the cost of separating the materials.",
+    "special_facility_required": true,
+    "source_file": "led-light-bulbs.md"
+  },
+  {
+    "item": "Mattress",
+    "aliases": [
+      "Bed",
+      "Sleeping Pad"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Bulk Waste",
+    "recyclable": false,
+    "reason": "Mattresses are bulky and contain a mix of materials that are difficult to recycle, making them non-recyclable in most cases. However, some companies may accept mattresses for recycling, but this is not a common practice.",
+    "preparation_steps": [
+      "Check with local recycling programs or hauling companies to see if they accept mattresses for recycling.",
+      "Consider donating a used mattress to a secondhand store or charity, but be aware that acceptance rules vary by location."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "mattresses.md"
+  },
+  {
+    "item": "Medical Sharps",
+    "aliases": [
+      "Needles",
+      "Lancets",
+      "Auto-injectors",
+      "Insulin auto-injectors",
+      "Syringes",
+      "Tubes"
+    ],
+    "category": "sanitary",
+    "bin_color": "black",
+    "bin_label": "Sanitary Waste",
+    "recyclable": false,
+    "reason": "Medical sharps are a biohazardous waste and cannot be recycled. They must be disposed of safely to prevent injury and infection.",
+    "preparation_steps": [
+      "Store used sharps in a heavy plastic bottle with a tight-fitting, puncture-resistant lid.",
+      "When the container is three-quarters full, seal it closed with duct tape and label it 'DO NOT RECYCLE: SHARPS'.",
+      "Take the sealed container to a designated collection site, such as a hospital, health department, or pharmacy."
+    ],
+    "safety_notes": "Never throw away or flush medical sharps; they can injure and infect people and wildlife.",
+    "special_facility_required": true,
+    "source_file": "medical-sharps.md"
+  },
+  {
+    "item": "Motor Oil & Filters",
+    "aliases": [
+      "Used Motor Oil & Filters",
+      "Motor Oil Recycling",
+      "Oil Filter Recycling"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Used motor oil and filters can be recycled to conserve natural resources, reduce energy consumption, and prevent water pollution. Recycling these products also helps to recover valuable materials like steel from oil filters.",
+    "preparation_steps": [
+      "Drain motor oil into a secure container with a top that seals.",
+      "Do not mix in any other car fluids like antifreeze or brake fluid.",
+      "Use a screwdriver to puncture the dome of your used oil filter, then turn it upside down and let it drain into the motor oil container overnight.",
+      "Put your oil filter in a plastic bag once it is fully drained."
+    ],
+    "safety_notes": "Do not mix used motor oil with other household hazardous waste, and follow local guidelines for collection and transportation.",
+    "special_facility_required": true,
+    "source_file": "motor-oil-and-filters.md"
+  },
+  {
+    "item": "Paint",
+    "aliases": [
+      "Latex Paint",
+      "Acrylic Paint",
+      "Alkyd Paint"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Household Hazardous Waste",
+    "recyclable": true,
+    "reason": "Proper disposal of paint is necessary to prevent environmental pollution and protect public health. Different types of paint require different disposal methods, so it's essential to know the type of paint you have before recycling or disposing of it.",
+    "preparation_steps": [
+      "Store paint in a cool, dry place to prevent drying and rust formation.",
+      "Donate unused paint to schools, community theaters, or housing nonprofits.",
+      "Dry out paint using kitty litter and/or newspaper before disposing of it in the trash or taking it to a transfer station."
+    ],
+    "safety_notes": "Wear protective gloves and eyewear when handling paint and its containers. Avoid inhaling paint fumes and keep paint away from children and pets.",
+    "special_facility_required": true,
+    "source_file": "paint.md"
+  },
+  {
+    "item": "Paper Bags",
+    "aliases": [
+      "Brown Paper Grocery Bags",
+      "Paper Lunch Bags",
+      "Shopping Bags",
+      "Gift Bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paper bags can be recycled with other paper items, making them as easy to recycle as tossing them in the bin or taking them to a collection center.",
+    "preparation_steps": [
+      "Remove any plastic coating or glue",
+      "Remove any soiled or wet portions",
+      "Check with your recycling provider for local rules"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper-bags.md"
+  },
+  {
+    "item": "Paper Cups",
+    "aliases": [
+      "To-Go Coffee Cups",
+      "Soda Cups"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Unfortunately, recycling at this point is basically nonexistent in the U.S. due to the plastic lining that can't be easily separated during the recycling process.",
+    "preparation_steps": [
+      "Remove the paper sleeve for coffee cups and recycle that with corrugated cardboard.",
+      "Recycle the plastic lid if your local program accepts #1-7 plastics in non-bottle form.",
+      "Throw away the straw or stirrer."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper-cups.md"
+  },
+  {
+    "item": "Paper",
+    "aliases": [
+      "Cardboard",
+      "Newspaper",
+      "Mixed Paper"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paper can be recycled into new paper products, reducing the need for virgin wood pulp and conserving natural resources.",
+    "preparation_steps": [
+      "Avoid getting paper wet",
+      "Remove plastic liners and staples",
+      "Break down cardboard boxes",
+      "Empty containers before recycling"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper.md"
+  },
+  {
+    "item": "Paperboard",
+    "aliases": [
+      "Paperboard items",
+      "Cereal box"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paperboard is accepted by most curbside programs and is easy to recycle. Look for 100 percent recycled content when buying paperboard.",
+    "preparation_steps": [
+      "Make sure paperboard is clean and dry to avoid contamination.",
+      "Remove any plastic or foil inserts, such as cereal box liners."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paperboard.md"
+  },
+  {
+    "item": "Pesticide Containers",
+    "aliases": [
+      "Pesticide Containers",
+      "Empty Pesticide Containers"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Pesticide containers can be recycled, but they require special treatment and cannot be tossed into your curbside bin. They are typically triple-rinsed and then processed or shipped to a facility equipped to handle the plastic.",
+    "preparation_steps": [
+      "Check with local recyclers to see if they accept pesticide containers",
+      "Triple-rinse the containers to remove any remaining pesticide residue",
+      "Check the container for any special markings or designations that may affect its recyclability"
+    ],
+    "safety_notes": "Pesticide containers can be hazardous if not handled properly. Wear protective gloves and eyewear when handling them.",
+    "special_facility_required": true,
+    "source_file": "pesticides-containers.md"
+  },
+  {
+    "item": "Phone Books",
+    "aliases": [
+      "Phone Directories",
+      "Yellow Pages"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Phone books are made of paper and are 100 percent recyclable, but magnets and other contaminants may make them difficult to recycle.",
+    "preparation_steps": [
+      "Check your local guidelines for recycling to ensure you have prepped your phone book properly.",
+      "Remove any extra items such as plastic bags or magnets before recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "phone-books.md"
+  },
+  {
+    "item": "Pillows",
+    "aliases": [
+      "Down Pillows",
+      "Memory Foam Pillows",
+      "Latex Foam Pillows"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Pillows can be recycled if they are clean and made of recyclable materials such as cotton, polyester, or memory foam. The fabric can be recovered by textiles recycling programs, and the latex foam may be recyclable in some areas.",
+    "preparation_steps": [
+      "Wash the pillow in cold water with a third of the usual amount of soap.",
+      "Dry the pillow in the dryer for a short cycle, then let it air-dry the rest of the way.",
+      "Vacuum the pillow before washing to get it extra clean."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "pillows.md"
+  },
+  {
+    "item": "Plastic Bags",
+    "aliases": [
+      "Plastic Packaging",
+      "Grocery Bags",
+      "Produce Bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic bags are recyclable and can be turned into new products, such as plastic lumber, reducing the need for new raw materials and the amount of waste sent to landfills.",
+    "preparation_steps": [
+      "Remove anything inside the bags, such as receipts, stickers, or crumbs.",
+      "Keep a bag collection bin in your house, such as one big garbage bag for all bags.",
+      "Make sure any bags you are recycling have a #2 or #4 plastic symbol on them."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-bags.md"
+  },
+  {
+    "item": "Plastic Caps & Lids",
+    "aliases": [
+      "Plastic Bottle Caps",
+      "Plastic Container Lids"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic caps and lids are made of different plastic resins than the bottles or jugs they secure, but can be recycled separately. Check with your local recycling program for specific guidelines.",
+    "preparation_steps": [
+      "Check with your local recycling program to see if they accept plastic caps and lids, and if they need to be separated from the bottles or containers.",
+      "If the cap is made of the same material as the container, you can reattach it before recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-caps-lids.md"
+  },
+  {
+    "item": "Plastic Wrap & Film",
+    "aliases": [
+      "Plastic Film",
+      "Plastic Bag",
+      "Dry Cleaning Bags",
+      "Mattress Covers",
+      "Newspaper Sleeves",
+      "Bread Bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic wrap and film cannot go in your curbside recycling bin because it tangles sorting equipment and causes costly shutdowns at recycling facilities. Instead, plastic film must be taken to designated drop-off locations or recycled through specialized programs.",
+    "preparation_steps": [
+      "Make sure your plastic film is clean and completely dry before you drop it off.",
+      "Check if there are any drop-off locations near you through the NexTrex Plastic Recycling Drop-Off Directory."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "plastic-wrap-film.md"
+  },
+  {
+    "item": "Rechargeable Batteries",
+    "aliases": [
+      "Rechargeable Battery",
+      "Spent Battery"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Rechargeable batteries contain potentially dangerous chemicals and should be recycled to reclaim useful materials and ensure proper handling.",
+    "preparation_steps": [
+      "Turn off your device before removing batteries.",
+      "Inspect the battery for leaks or damage.",
+      "Store damaged batteries in a non-flammable material like sand or kitty litter.",
+      "Clean the inside of your device after removing a damaged battery.",
+      "Store batteries so that their active ends are not touching."
+    ],
+    "safety_notes": "Handle damaged batteries with extra care and separate them from other batteries. Check if the battery has been recalled before recycling.",
+    "special_facility_required": true,
+    "source_file": "rechargeable-batteries.md"
+  },
+  {
+    "item": "Shredded Paper",
+    "aliases": [
+      "Shredded Documents",
+      "Shredded Paper Waste"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Most recycling programs do not accept shredded paper in the recycling bin because staples and other contaminants can be mixed in with shredded paper, and it reduces the paper's recycling market.",
+    "preparation_steps": [
+      "Find out what your regional recycling programs offer.",
+      "Find drop-off spots for shredded paper by adding your ZIP Code to this Earth911 Recycling Search."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "shredded-paper.md"
+  },
+  {
+    "item": "Small Appliances",
+    "aliases": [
+      "Appliances",
+      "Small Electronics"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Most small appliances are mainly composed of metal, like steel, and have useful materials that are pretty easy to recycle.",
+    "preparation_steps": [
+      "Unplug your appliance for several days before recycling to let it cool down.",
+      "Tie up the power cord using either a twist tie or the cord itself (or tape it to the unit).",
+      "Remove any removable parts not made of metal (such as the tempered glass or plastic blender jar)."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "small-appliances.md"
+  },
+  {
+    "item": "Small Electronics",
+    "aliases": [
+      "Electronics",
+      "Small Devices",
+      "Cell Phones",
+      "Tablets",
+      "MP3 Players",
+      "Digital Cameras"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Small electronics contain heavy metals and other hazardous materials that can contaminate soil and water if not disposed of properly. Recycling them helps to conserve natural resources and reduce waste.",
+    "preparation_steps": [
+      "Factory reset your electronics and delete any pictures or songs from your devices.",
+      "Remove the battery if possible, especially for electronics using a lithium-ion battery.",
+      "Look for a mail-in program that will pay for small electronics or find charities that will accept them to raise money.",
+      "Ask your company's IT department to schedule an electronics recycling event once a year if you work in an office."
+    ],
+    "safety_notes": "Special transportation procedure required for lithium-ion batteries.",
+    "special_facility_required": true,
+    "source_file": "small-electronics.md"
+  },
+  {
+    "item": "Steel Cans",
+    "aliases": [
+      "Tin Cans",
+      "Bi-Metal Cans"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Steel cans are highly recyclable and can be recycled infinitely with no loss of quality, making them a valuable resource to recycle.",
+    "preparation_steps": [
+      "Most steel cans will have a paper label, which does not need to be removed.",
+      "Rinse your cans to remove any leftover food.",
+      "Completely remove the lid and insert it into the can, then pinch the top so it closes."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "tin-or-steel-cans.md"
+  },
+  {
+    "item": "Unwanted or Expired Medications",
+    "aliases": [
+      "Expired Medications",
+      "Unused Medications"
+    ],
+    "category": "sanitary",
+    "bin_color": "black",
+    "bin_label": "Sanitary Waste",
+    "recyclable": false,
+    "reason": "Medications are not recyclable, but responsible disposal is crucial for human and environmental health.",
+    "preparation_steps": [
+      "Pour medication into a sealable plastic bag. If the medication is a solid (pill, liquid capsule, etc.), add water to dissolve it.",
+      "Add kitty litter, sawdust or coffee grounds (or any material that mixes with the medication and makes it less appealing for pets and children to eat) to the plastic bag.",
+      "Seal the plastic bag and put it in the trash.",
+      "Remove and destroy all identifying personal information on the prescription label from all medication containers before recycling them or throwing them away."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "unwanted-or-expired-medications.md"
+  },
+  {
+    "item": "Waxed Cardboard",
+    "aliases": [
+      "Waxed Corrugated Cardboard",
+      "Waxed Multi-Layered Cardboard"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Waxed cardboard can be recycled if your recycling program accepts wet-strength or frozen food paperboard boxes. Check local options and break down the boxes before sending them.",
+    "preparation_steps": [
+      "Check local recycling options",
+      "Break down the boxes"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "waxed-cardboard.md"
+  },
+  {
+    "item": "Fluorescent Tubes",
+    "aliases": [
+      "Fluorescent Lamps",
+      "CFLs"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Household Hazardous Waste",
+    "recyclable": true,
+    "reason": "Fluorescent tubes contain hazardous materials like mercury, which can be extracted and reused, and also contain valuable materials like aluminum and glass.",
+    "preparation_steps": [
+      "Turn off the power to the tube before uninstalling it.",
+      "Remove the light cover and unscrew the tube.",
+      "Pack the tube in newspaper or bubble wrap to prevent breakage during transport."
+    ],
+    "safety_notes": "Mercury is a hazardous material, handle with care.",
+    "special_facility_required": true,
+    "source_file": "fluorescent-tubes.md"
+  },
+  {
+    "item": "Glass Bottles & Jars",
+    "aliases": [
+      "Glass Bottles",
+      "Glass Jars"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Glass bottles can be recycled infinitely with no loss in purity, and most large cities accept glass in their curbside recycling programs.",
+    "preparation_steps": [
+      "Do your best to not break glass bottles, as there is no market for recycling broken glass.",
+      "Leave the label/foil on, but separate the metal caps and remove all wine corks.",
+      "Remove any non-containers from your glass recycling, such as Pyrex, glassware, windows, and mirrors."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "glass-bottles-jars.md"
+  },
+  {
+    "item": "Inkjet and Toner Cartridges",
+    "aliases": [
+      "Ink Cartridges",
+      "Toner Cartridges",
+      "Printer Cartridges"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Inkjet and toner cartridges are not recyclable through regular curbside recycling programs, but can be taken to participating office supply stores or mailed back to manufacturers for recycling.",
+    "preparation_steps": [
+      "Check with local office supply stores or manufacturers for specific recycling programs and guidelines.",
+      "Remove any labels and caps from the cartridges.",
+      "Empty any remaining ink from the cartridges."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "ink-cartridges.md"
+  },
+  {
+    "item": "Large Appliances",
+    "aliases": [
+      "Appliances",
+      "Household Appliances"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Large appliances are mostly made of easily recyclable metal, and recycling them helps conserve natural resources and reduces waste.",
+    "preparation_steps": [
+      "Unplug your appliance for several days before recycling it to let it cool down.",
+      "Tape any doors with masking or duct tape so they donÃ¢â‚¬â„¢t fly open during transport.",
+      "Use a dolly to transport the appliance to the curb or a truck, as large appliances are too heavy for one person to carry."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "large-appliances.md"
+  },
+  {
+    "item": "Scrap Metal",
+    "aliases": [
+      "Metal",
+      "Ferrous Metal",
+      "Nonferrous Metal"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Scrap metal is valuable and can be recycled for money, helping to conserve limited supply materials and reduce landfill waste.",
+    "preparation_steps": [
+      "Check if the product is at least 50% metal.",
+      "Separate metal from other materials if possible.",
+      "Identify whether the metal is ferrous (iron and steel) or nonferrous (aluminum, copper, and other metals) using a magnet.",
+      "Use Earth911's recycling directory to find a scrap metal recycler near you and contact them for current payouts and minimum material requirements."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "metal.md"
+  },
+  {
+    "item": "Newspaper",
+    "aliases": [
+      "Newspaper",
+      "Paper"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Newspaper is easily recycled through many curbside recycling programs and can be made into new newsprint and other materials.",
+    "preparation_steps": [
+      "Rinse the newspaper to remove any food or liquid residue.",
+      "Remove any plastic or metal inserts, such as plastic bags or staples.",
+      "Tear the newspaper into manageable pieces to fit in your recycling bin."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "newspaper.md"
+  },
+  {
+    "item": "Packing Peanuts",
+    "aliases": [
+      "Popcorn",
+      "EPS"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Unfortunately, you can't 'un-expand' foam plastic, and that limits the recycling market for this material.",
+    "preparation_steps": [
+      "Determine whether packing peanuts are EPS (polystyrene) or biodegradable starch-based alternatives by dropping a peanut into a glass of warm water.",
+      "If it dissolves, it's a biodegradable starch peanut that can be composted. If it stays intact, it's EPS and needs to be reused, recycled, or properly disposed of."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "packing-peanuts.md"
+  },
+  {
+    "item": "Plastic Bottles & Jugs",
+    "aliases": [
+      "Plastic Bottles",
+      "Plastic Jugs"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Most curbside recycling programs accept #1 and #2 plastic bottles and jugs, which can be recycled into new products, saving energy and reducing marine debris.",
+    "preparation_steps": [
+      "Rinse your bottles and jugs before recycling.",
+      "Check with your local program whether to keep caps on the bottles or whether caps are accepted at all.",
+      "You can leave the label on the bottle, but it's unlikely to be recycled."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-jugs-bottles.md"
+  },
+  {
+    "item": "Shingles",
+    "aliases": [
+      "Asphalt Shingles",
+      "Roofing Material"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Construction and Demolition Waste",
+    "recyclable": false,
+    "reason": "Shingles are typically not recyclable due to their complex composition and the lack of local recycling facilities. However, some companies like Owens Corning are working to advance shingle recycling technology.",
+    "preparation_steps": [],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "shingles.md"
+  },
+  {
+    "item": "Tires",
+    "aliases": [
+      "Flat Tires",
+      "Old Tires"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Construction and Demolition Waste",
+    "recyclable": false,
+    "reason": "Tires are not recyclable in the traditional sense, but they can be reused or repurposed in various ways, such as making planters or compost bins. They can also be taken to a specialized facility for proper disposal.",
+    "preparation_steps": [
+      "Ask an auto shop if your old tires can be retreaded or repaired.",
+      "Remove the rim and wheel weights from the tire.",
+      "Consider reusing the tire in a creative project, such as making a planter or compost bin."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "tires.md"
+  },
+  {
+    "item": "Gift Cards",
+    "aliases": [
+      "Gift Cards, Gift Wrap"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Gift cards cannot be recycled through curbside programs, but can be sent to a mail-in program or dropped off at a participating retailer.",
+    "preparation_steps": [
+      "Check if the gift card is made of polyvinyl chloride (PVC) and can be sent to Earthworks Systems for recycling.",
+      "Contact local retailers to see if they accept gift card drop-offs or have a mail-in program.",
+      "Use the Earth911 recycling locator to find a local option for recycling gift cards."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "gift-cards-gift-wrap.md"
+  },
+  {
+    "item": "Acrylic Plaques and Awards",
+    "aliases": [
+      "Acrylic",
+      "Lucite",
+      "PMMA"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Acrylic can be broken down and purified to make new, high-quality material through industrial recycling processes like pyrolysis.",
+    "preparation_steps": [
+      "Separate acrylic from wood or metal components",
+      "Recycle wood or metal components separately",
+      "Ensure acrylic is clean and free of contaminants"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "acrylic-plaques-and-awards.md"
+  },
+  {
+    "item": "Aerosol Cans",
+    "aliases": [
+      "Spray Cans",
+      "Pressurized Cans"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Aerosol cans contain potentially hazardous contents and pressurized air, requiring special handling for safe recycling.",
+    "preparation_steps": [
+      "Use up all the product inside the can.",
+      "Remove and recycle the plastic cap separately.",
+      "Do not puncture a hole in the can or remove the spray nozzle."
+    ],
+    "safety_notes": "Be cautious when handling aerosol cans, as they can explode if punctured or crushed.",
+    "special_facility_required": true,
+    "source_file": "aerosol-cans.md"
+  },
+  {
+    "item": "Aluminum Cans",
+    "aliases": [
+      "Aluminum Beverage Cans",
+      "Soda Cans",
+      "Beer Cans"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Aluminum cans are made from a recyclable material that can be transformed into new cans, saving energy and reducing waste.",
+    "preparation_steps": [
+      "Rinse the can with water to remove any residual liquid",
+      "Crush or flatten the can to save space",
+      "Ensure the can is dry and free of contaminants"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "aluminum-cans.md"
+  },
+  {
+    "item": "Aluminum Foil",
+    "aliases": [
+      "Aluminum Foil",
+      "Aluminum Wrap"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Aluminum foil is made from the same material as soda cans and can be reprocessed into new aluminum products, but it often requires special collection due to contamination with food waste or blending with other materials.",
+    "preparation_steps": [
+      "Ensure the foil is clean and free of food residue",
+      "Check with local recycling programs for specific guidelines on aluminum foil collection"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "aluminum-foil.md"
+  },
+  {
+    "item": "Automotive Fluids",
+    "aliases": [
+      "Motor Oil",
+      "Transmission Fluid",
+      "Antifreeze",
+      "Gear Oil",
+      "Power Steering Fluid"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Used automotive fluids can contaminate soil and water if disposed of improperly, but can be recycled into new fluids.",
+    "preparation_steps": [
+      "Place each fluid in a separate, secure container",
+      "Do not mix fluids",
+      "Use original motor oil bottles, household containers with secure lids, or sealed specialty containers"
+    ],
+    "safety_notes": "Handle with care, as fluids may be flammable and hazardous to skin and eyes",
+    "special_facility_required": true,
+    "source_file": "automotive-fluids.md"
+  },
+  {
+    "item": "Bathroom Products",
+    "aliases": [
+      "Shampoo Bottles",
+      "Lotion Bottles",
+      "Mouthwash Bottles",
+      "Toilet Paper Rolls",
+      "Tissue Boxes",
+      "Bandage Boxes"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "These items are made of recyclable materials like plastic, cardboard, and paper, and can be easily processed into new products.",
+    "preparation_steps": [
+      "Rinse bottles quickly to remove excess contents",
+      "Remove caps and lids",
+      "Flatten cardboard and paper products"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "bathroom-products.md"
+  },
+  {
+    "item": "Books and Magazines",
+    "aliases": [
+      "Magazines",
+      "Books"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Books and magazines are made of mixed paper, which can be recycled into new paper products, reducing landfill waste and conserving natural resources.",
+    "preparation_steps": [
+      "For magazines, leave staples, cardstock ads, and perfume samples inside.",
+      "Remove plastic bags and recycle them separately.",
+      "For paperback books, recycle the book whole, including the binding.",
+      "For hardcover books, remove the cover before recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "books-magazines.md"
+  },
+  {
+    "item": "Car Batteries",
+    "aliases": [
+      "Lead-Acid Batteries",
+      "Automotive Batteries"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Car batteries contain hazardous materials like lead and acid, requiring special handling and recycling to prevent environmental contamination.",
+    "preparation_steps": [
+      "Take the battery to an auto parts store or service shop that accepts old batteries for recycling",
+      "Ensure the battery is handled and transported safely to prevent leakage or damage"
+    ],
+    "safety_notes": "Handle with care, as car batteries contain corrosive acid and can cause injury if not handled properly.",
+    "special_facility_required": true,
+    "source_file": "car-batteries.md"
+  },
+  {
+    "item": "Cardboard",
+    "aliases": [
+      "Corrugated Cardboard",
+      "Paperboard"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cardboard is a high-commodity material that can be recycled into new cardboard boxes, paperboard, or chipboard, conserving natural resources and reducing landfill waste.",
+    "preparation_steps": [
+      "Cut any tape used to seal the top and/or bottom of the box, then collapse the box.",
+      "Fold or cut the flattened box in half if it is too large to fit in your recycling cart.",
+      "Cut out any food contamination from food-soiled boxes before recycling."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cardboard.md"
+  },
+  {
+    "item": "Carpet",
+    "aliases": [
+      "Carpet Padding"
+    ],
+    "category": "construction",
+    "bin_color": "grey",
+    "bin_label": "Construction Waste",
+    "recyclable": true,
+    "reason": "Carpet is made of complex fibers and multiple components, making it difficult to break down in landfills, but it can be recycled into new products.",
+    "preparation_steps": [
+      "Check with local recycling facilities for accepted types of carpet",
+      "Remove any attached padding or debris"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "carpet.md"
+  },
+  {
+    "item": "Cartons",
+    "aliases": [
+      "Milk Cartons",
+      "Juice Cartons",
+      "Soup Cartons"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cartons are made mainly from paper, a renewable resource, and can be recycled into products like tissue, paper towel, and building materials.",
+    "preparation_steps": [
+      "Rinse your empty cartons",
+      "Remove the plastic lids, caps and straws from cartons"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cartons.md"
+  },
+  {
+    "item": "CDs & Tapes",
+    "aliases": [
+      "CDs",
+      "DVDs",
+      "VHS tapes",
+      "audio tapes",
+      "video tapes"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "They contain a mixture of different plastic resins and have limited recycling markets, but can be recycled through specialized facilities.",
+    "preparation_steps": [
+      "Remove any paper sleeves",
+      "Donate or sell to secondhand stores or online marketplaces",
+      "Use for DIY art projects"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "cds-tapes.md"
+  },
+  {
+    "item": "Cell Phones",
+    "aliases": [
+      "Mobile Phones",
+      "Smartphones"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Cell phones contain hazardous materials like lithium-ion batteries and electronic components that require special handling and recycling.",
+    "preparation_steps": [
+      "Transfer data from your old phone to your new phone or a computer.",
+      "Factory reset your phone to remove all data.",
+      "Remove the SIM card and, if possible, the battery."
+    ],
+    "safety_notes": "Lithium-ion batteries require special transportation for recycling.",
+    "special_facility_required": true,
+    "source_file": "cell-phones.md"
+  },
+  {
+    "item": "CFLs",
+    "aliases": [
+      "Compact Fluorescent Lightbulbs"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "CFLs contain mercury, a toxic substance that can harm the environment if not disposed of properly. Recycling CFLs helps to recover mercury and other materials.",
+    "preparation_steps": [
+      "Unplug the lamp or turn off the fuse box before removing the CFL",
+      "Put the CFL in a plastic zipper bag to prevent mercury from leaking if it breaks",
+      "Do not pack multiple CFLs in the same bag"
+    ],
+    "safety_notes": "Be careful when handling CFLs as they contain mercury, which can be toxic if ingested or inhaled.",
+    "special_facility_required": true,
+    "source_file": "cfls.md"
+  },
+  {
+    "item": "Christmas Trees",
+    "aliases": [
+      "Real Christmas Trees",
+      "Evergreen Trees"
+    ],
+    "category": "wet_waste",
+    "bin_color": "green",
+    "bin_label": "Wet Waste",
+    "recyclable": true,
+    "reason": "Christmas trees are organic and can be composted or chipped into mulch, reducing waste in landfills and providing a beneficial garden product.",
+    "preparation_steps": [
+      "Remove any ornaments, lights, tinsel or other decorations from the tree, as well as the stand.",
+      "Put a tarp under the tree before hauling it to the curb or car to prevent needles from shedding.",
+      "Cut large trees (taller than 5 feet) in half if required by local collection services."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "christmas-trees.md"
+  },
+  {
+    "item": "Clothing & Accessories",
+    "aliases": [
+      "Textiles",
+      "Apparel",
+      "Fashion items"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Clothing and accessories can be reused, repurposed, or recycled, reducing waste and supporting sustainable fashion practices.",
+    "preparation_steps": [
+      "Sort items into three piles: great condition, good condition, and poor condition.",
+      "Donate great-condition items to clothing swaps or consignment stores.",
+      "Donate good-condition items to thrift stores or charity organizations.",
+      "Recycle poor-condition items through designated clothing recycling programs or drop-off locations."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "clothing-accessories.md"
+  },
+  {
+    "item": "Computer Monitors",
+    "aliases": [
+      "CRT monitors",
+      "LCD monitors",
+      "computer screens"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Computer monitors contain toxic metals like lead and mercury that require special handling and recycling to prevent environmental contamination.",
+    "preparation_steps": [
+      "Unplug the DVI, HDMI or VGA cable from your monitor (as well as the CPU) to lighten the load and prevent tripping.",
+      "Use a dolly or a rolling chair to transport the monitor to your car.",
+      "Place a towel or blanket down in the car and put the monitor face down on top."
+    ],
+    "safety_notes": "Handle with care to avoid breaking and potential exposure to toxic materials.",
+    "special_facility_required": true,
+    "source_file": "computer-monitors.md"
+  },
+  {
+    "item": "Computers",
+    "aliases": [
+      "Laptops",
+      "Desktops",
+      "PCs"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Computers contain valuable metals like gold, silver, and platinum that can be recovered and reused, but require special handling due to hazardous materials.",
+    "preparation_steps": [
+      "Remove all data from your computer to prevent identity theft.",
+      "Unplug the computer peripherals (keyboard, speakers, etc.) from your desktop or laptop.",
+      "For a laptop, flip it over and see if you can remove the battery."
+    ],
+    "safety_notes": "May contain hazardous materials like lead, mercury, and cadmium.",
+    "special_facility_required": true,
+    "source_file": "computers.md"
+  },
+  {
+    "item": "Construction Waste",
+    "aliases": [
+      "C&D Materials",
+      "Construction and Demolition Waste"
+    ],
+    "category": "construction",
+    "bin_color": "grey",
+    "bin_label": "Construction Waste",
+    "recyclable": true,
+    "reason": "Construction waste includes materials like concrete, wood, bricks, and metal that can be recycled or reused, but are often too large or heavy for curbside collection.",
+    "preparation_steps": [
+      "Sort materials by type",
+      "Remove any hazardous materials",
+      "Consider renting a dumpster or contacting a local recycling center"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "construction-waste.md"
+  },
+  {
+    "item": "Cooking Oil",
+    "aliases": [
+      "Used Cooking Oil",
+      "Vegetable Oil"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Cooking oil can solidify and cause blockages in sewers, but it can be recycled into biodiesel and other products.",
+    "preparation_steps": [
+      "Designate a container. Metal coffee cans, plastic butter containers, or original oil bottles work well. Label it clearly so no one accidentally mistakes it for food.",
+      "Strain and store. Allow oil to cool completely before handling. Strain out large food particles"
+    ],
+    "safety_notes": "Be careful when handling hot cooking oil as it can cause burns.",
+    "special_facility_required": true,
+    "source_file": "cooking-oil.md"
+  },
+  {
+    "item": "Cookware",
+    "aliases": [
+      "Pots",
+      "Pans",
+      "Spatulas",
+      "Whisks"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Cookware is typically made from recyclable materials such as aluminum, copper, and stainless steel, which can be collected and processed for reuse.",
+    "preparation_steps": [
+      "Check with local recycling centers to see if they accept cookware",
+      "Determine if the cookware is made from ferrous or non-ferrous metal",
+      "Remove any non-metal components such as handles or non-stick coatings"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "cookware.md"
+  },
+  {
+    "item": "Corks",
+    "aliases": [
+      "Wine Corks"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Corks are made from natural, biodegradable, and renewable cork oak tree bark, making them suitable for recycling with paper and cardboard.",
+    "preparation_steps": [
+      "Sort and clean corks",
+      "Check with local recycling programs for accepted types of corks"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "corks.md"
+  },
+  {
+    "item": "Fluorescent Tubes",
+    "aliases": [
+      "Fluorescent Lamps"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Household Hazardous Waste",
+    "recyclable": true,
+    "reason": "Fluorescent tubes contain mercury, a hazardous material that requires special handling and recycling to prevent environmental contamination.",
+    "preparation_steps": [
+      "Turn off the fuse box providing power to the section of the house where the tube is installed.",
+      "Use a ladder to ensure the bulb doesn’t fall to the ground.",
+      "Remove the light cover and unscrew the tube.",
+      "Pack the tube in newspaper or bubble wrap when transporting to a recycling center or household hazardous waste event."
+    ],
+    "safety_notes": "Be careful when handling broken fluorescent tubes, as they contain hazardous mercury. Avoid recycling broken tubes.",
+    "special_facility_required": true,
+    "source_file": "fluorescent-tubes.md"
+  },
+  {
+    "item": "Frozen Food Boxes",
+    "aliases": [
+      "Frozen Food Packaging",
+      "TV Dinner Boxes"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "The plastic coating on frozen food boxes makes them non-recyclable in standard recycling facilities.",
+    "preparation_steps": [
+      "Remove any food residue",
+      "Check with local waste management for special collection programs"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "frozen-food-boxes.md"
+  },
+  {
+    "item": "Furniture",
+    "aliases": [
+      "Household Furniture",
+      "Bulk Waste"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Bulk Waste",
+    "recyclable": false,
+    "reason": "Furniture is typically too large for curbside recycling bins and often contains mixed materials, making it non-recyclable in standard programs.",
+    "preparation_steps": [
+      "Make sure your furniture is free of all personal items.",
+      "Determine the base material of your furniture.",
+      "Contact a scrap metal dealer for metal furniture or a local secondhand store for donation.",
+      "Check with your community for bulk waste collection services."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "furniture.md"
+  },
+  {
+    "item": "Gift Cards",
+    "aliases": [
+      "Gift Wrap",
+      "Gift Boxes",
+      "Gift Bags"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Gift cards are made of PVC or other materials that require special recycling facilities.",
+    "preparation_steps": [
+      "Check with local retailers for drop-off locations or mail-in programs",
+      "Remove any remaining balance or personal info"
+    ],
+    "safety_notes": "Some gift cards may contain hazardous materials like batteries or electronics.",
+    "special_facility_required": true,
+    "source_file": "gift-cards-gift-wrap.md"
+  },
+  {
+    "item": "Glass Bottles & Jars",
+    "aliases": [
+      "Glass Containers",
+      "Glass Packaging"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Glass bottles and jars can be recycled infinitely with no loss in purity, and represent the quickest recycled-packaging process.",
+    "preparation_steps": [
+      "Do your best to not break glass bottles, as there is no market for recycling broken glass.",
+      "You can leave the label/foil on, but many recyclers will ask you to separate the metal caps.",
+      "Remove all wine corks and any non-containers from your glass recycling, such as Pyrex, glassware, windows, and mirrors."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "glass-bottles-jars.md"
+  },
+  {
+    "item": "Glass",
+    "aliases": [
+      "Container Glass"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Glass is made from sand and can be melted and reused to make new glass products, reducing the need for raw materials.",
+    "preparation_steps": [
+      "Prevent glass from breaking to maintain its recycling value",
+      "Wrap broken glass in a plastic bag before disposal to prevent injury to sanitation workers",
+      "For non-container glass like windows and mirrors, find a construction and demolition recycler or schedule a bulk waste pick-up with your local municipality"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "glass.md"
+  },
+  {
+    "item": "Household Cleaners",
+    "aliases": [
+      "Cleaning Products",
+      "Household Cleaning Materials"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": false,
+    "reason": "Household cleaners can be hazardous to the environment if disposed of improperly, and require special handling.",
+    "preparation_steps": [
+      "Check the label for specific disposal instructions",
+      "Empty any unused product prior to disposal",
+      "Check with local waste disposal guidelines or household hazardous waste facility"
+    ],
+    "safety_notes": "Some household cleaning materials are considered hazardous to the environment if disposed of improperly. Handle with care and follow local guidelines.",
+    "special_facility_required": true,
+    "source_file": "household-cleaners.md"
+  },
+  {
+    "item": "Ink Cartridges",
+    "aliases": [
+      "Toner Cartridges",
+      "Printer Cartridges"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Ink cartridges contain hazardous materials like ink and metal, and can be reused or recycled to conserve natural resources and reduce landfill waste.",
+    "preparation_steps": [
+      "Check with local retailers like Office Depot, Staples, Best Buy, or Target for drop-off locations",
+      "Use the Earth911 recycling locator to find local options",
+      "Call ahead to confirm store policies"
+    ],
+    "safety_notes": "Ink cartridges may contain hazardous materials, handle with care",
+    "special_facility_required": false,
+    "source_file": "ink-cartridges.md"
+  },
+  {
+    "item": "Items Containing Mercury",
+    "aliases": [
+      "Mercury-containing products",
+      "Mercury products"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Mercury is a toxic substance that requires special handling and disposal to prevent environmental contamination and health hazards.",
+    "preparation_steps": [
+      "Check with local authorities for household hazardous waste collection events or facilities",
+      "Ensure items are properly packaged and labeled for transportation to the collection facility"
+    ],
+    "safety_notes": "Handle items containing mercury with care to avoid breakage and release of toxic vapor. Wear protective gloves and avoid touching your face or eyes.",
+    "special_facility_required": true,
+    "source_file": "items-containing-mercury.md"
+  },
+  {
+    "item": "Large Appliances",
+    "aliases": [
+      "Appliances",
+      "Household Appliances"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Large appliances contain recyclable metals and hazardous materials like Freon, which must be handled properly to prevent environmental harm.",
+    "preparation_steps": [
+      "Unplug your appliance for several days before recycling it to let it cool down.",
+      "Confirm whether the recycler removes Freon, or contact a professional to do the Freon removal before recycling.",
+      "Ask the delivery company if it will haul away your old appliance.",
+      "Consider donating still-working products.",
+      "Tape any doors with masking or duct tape so they don’t fly open during transport.",
+      "Use a dolly to transport the appliance."
+    ],
+    "safety_notes": "Be cautious when handling large appliances, as they can be heavy and may contain hazardous materials.",
+    "special_facility_required": true,
+    "source_file": "large-appliances.md"
+  },
+  {
+    "item": "Large Electronics",
+    "aliases": [
+      "Big-screen TVs",
+      "Office copiers/printers",
+      "Audio receivers/amplifiers"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Large electronics contain hazardous materials like lead and mercury, and recycling helps to safely dispose of these materials and recover valuable components.",
+    "preparation_steps": [
+      "Restore factory settings to delete personal data",
+      "Unplug and bundle cords to prevent tripping hazards",
+      "Consider donating if the item still works",
+      "Use a dolly to transport electronics safely"
+    ],
+    "safety_notes": "Electronics with cathode ray tubes (CRTs) contain hazardous metals like lead and mercury, which can be toxic if released.",
+    "special_facility_required": true,
+    "source_file": "large-electronics.md"
+  },
+  {
+    "item": "LED Light Bulbs",
+    "aliases": [
+      "LED Bulbs",
+      "Light Emitting Diode Bulbs"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "LED light bulbs contain recyclable materials such as glass, metal, and plastic, and recycling helps conserve Earth's resources and reduces landfill waste.",
+    "preparation_steps": [
+      "Turn off the lamp or light before removing the LED bulb from the fixture.",
+      "Wrap each bulb separately in a plastic bag to reduce breakage and protect workers (check with your recycler for specific requirements).",
+      "Remove string lights from their display structure before recycling."
+    ],
+    "safety_notes": "Handle with care to avoid breakage, as LEDs may contain hazardous materials.",
+    "special_facility_required": true,
+    "source_file": "led-light-bulbs.md"
+  },
+  {
+    "item": "Mattresses",
+    "aliases": [
+      "Bed mattresses",
+      "Sleeping mattresses"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Mattresses are typically too large and complex for curbside recycling, but can be recycled through specialized programs.",
+    "preparation_steps": [
+      "Check with local retailers for take-back programs",
+      "Contact local recycling centers for bulk collection",
+      "Donate to second-hand stores that accept mattresses",
+      "Hire a professional hauler for large-scale recycling"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "mattresses.md"
+  },
+  {
+    "item": "Medical Sharps",
+    "aliases": [
+      "Needles",
+      "Lancets",
+      "Auto-injectors",
+      "Syringes"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": false,
+    "reason": "Medical sharps are biohazardous and require special handling to prevent injury and infection.",
+    "preparation_steps": [
+      "Store used sharps in a leak-resistant container, such as an FDA-approved red sharps disposal box or a heavy plastic bottle.",
+      "Seal the container when it is three-quarters full and label it 'DO NOT RECYCLE: SHARPS'."
+    ],
+    "safety_notes": "Handle medical sharps with care to prevent injury and infection. Never throw away or flush medical sharps.",
+    "special_facility_required": true,
+    "source_file": "medical-sharps.md"
+  },
+  {
+    "item": "Metal",
+    "aliases": [
+      "Scrap Metal",
+      "Ferrous Metal",
+      "Nonferrous Metal"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Metal is a valuable material that can be recycled to conserve natural resources and make new products, and it can also make you money.",
+    "preparation_steps": [
+      "Ensure the product is at least 50 percent metal.",
+      "Separate metal parts from non-metal parts if possible.",
+      "Identify whether the metal is ferrous (iron and steel) or nonferrous (aluminum, copper, and other metals) using a magnet.",
+      "Find a scrap metal recycler near you and contact them for current payouts and requirements.",
+      "Bring identification when recycling scrap metal."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "metal.md"
+  },
+  {
+    "item": "Motor Oil & Filters",
+    "aliases": [
+      "Used Motor Oil",
+      "Motor Oil Filters"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Motor oil and filters contain hazardous materials that can contaminate soil and water if not disposed of properly. Recycling helps to re-refine oil and recover steel from filters.",
+    "preparation_steps": [
+      "Drain motor oil into a secure container with a sealed top.",
+      "Do not mix with other car fluids.",
+      "Collect oil filters and puncture the dome to drain oil.",
+      "Place drained oil filters in a plastic bag."
+    ],
+    "safety_notes": "Handle used motor oil and filters with care, as they can cause skin irritation and contain hazardous materials.",
+    "special_facility_required": true,
+    "source_file": "motor-oil-and-filters.md"
+  },
+  {
+    "item": "Newspaper",
+    "aliases": [
+      "Newsprint"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Newspaper can be easily recycled through curbside recycling programs and made into new newsprint and other materials.",
+    "preparation_steps": [
+      "Remove any plastic or glossy inserts",
+      "Flatten the newspaper"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "newspaper.md"
+  },
+  {
+    "item": "Packing Peanuts",
+    "aliases": [
+      "Styrofoam Peanuts",
+      "EPS Peanuts",
+      "Polystyrene Peanuts"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Packing peanuts are made of expanded polystyrene (EPS), a type of plastic that can be recycled, but requires special facilities.",
+    "preparation_steps": [
+      "Determine if the packing peanuts are EPS (polystyrene) or biodegradable starch-based alternatives by dropping one into a glass of warm water.",
+      "If biodegradable, they can be composted.",
+      "If EPS, ensure they are clean and free of contaminants."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "packing-peanuts.md"
+  },
+  {
+    "item": "Paint",
+    "aliases": [
+      "Latex paint",
+      "Acrylic paint",
+      "Alkyd paint",
+      "Oil-based paint"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Paint contains hazardous chemicals that can pollute soil and water if not disposed of properly. Recycling paint helps to prevent environmental pollution and conserve natural resources.",
+    "preparation_steps": [
+      "Store paint cans with lids tightly sealed in a cool, dry place",
+      "Donate usable paint to schools, community theaters, or nonprofits",
+      "Dry out oil-based paint with kitty litter or newspaper before disposal",
+      "Check with local authorities for household hazardous waste collection programs"
+    ],
+    "safety_notes": "Handle paint cans with care, as they may contain hazardous chemicals. Wear gloves and work in a well-ventilated area when handling paint.",
+    "special_facility_required": true,
+    "source_file": "paint.md"
+  },
+  {
+    "item": "Paper Bags",
+    "aliases": [
+      "Brown Paper Grocery Bags",
+      "Paper Lunch Bags",
+      "Shopping Bags",
+      "Gift Bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paper bags are made of paper products and can be easily recycled with other paper items.",
+    "preparation_steps": [
+      "Remove any soiled or food-contaminated portions",
+      "Remove any non-paper handles or components if required by local recycling guidelines",
+      "Check with local recycling provider for specific guidelines on plastic-coated bags"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper-bags.md"
+  },
+  {
+    "item": "Paper Cups",
+    "aliases": [
+      "Coffee Cups",
+      "Soda Cups"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Paper cups are lined with a thin coating of plastic that can't be easily separated during the recycling process, making them non-recyclable in most curbside programs.",
+    "preparation_steps": [
+      "Remove the paper sleeve and recycle it with corrugated cardboard",
+      "Recycle the plastic lid if your local program accepts #1-7 plastics in non-bottle form",
+      "Throw away the straw or stirrer",
+      "Compost bio-based paper cups in a backyard compost bin if possible"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper-cups.md"
+  },
+  {
+    "item": "Paper",
+    "aliases": [
+      "Cardboard",
+      "Newspaper",
+      "Cardboard boxes",
+      "Paperboard"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paper is made from natural fibers and can be easily recycled into new paper products, reducing the need for virgin wood pulp.",
+    "preparation_steps": [
+      "Empty containers before tossing them in the recycling bin",
+      "Use a black marker to remove sensitive information instead of shredding",
+      "Break down boxes to save room in the recycling bin",
+      "Verify what types of paper are accepted in your area"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paper.md"
+  },
+  {
+    "item": "Paperboard",
+    "aliases": [
+      "Cardboard (single-layer)",
+      "Paperboard products"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Paperboard is made from paper products and can be easily recycled with other paper materials.",
+    "preparation_steps": [
+      "Ensure paperboard is clean and dry"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "paperboard.md"
+  },
+  {
+    "item": "Pesticide Containers",
+    "aliases": [
+      "Pesticide Packaging",
+      "Pesticide Jugs"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Pesticide containers require special treatment and cannot be disposed of in regular trash or curbside bins. They can be recycled through special facilities.",
+    "preparation_steps": [
+      "Triple-rinse the container",
+      "Check with local recyclers for accepted materials and specifications"
+    ],
+    "safety_notes": "Handle with care, may contain hazardous residues",
+    "special_facility_required": true,
+    "source_file": "pesticides-containers.md"
+  },
+  {
+    "item": "phone books",
+    "aliases": [],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Phone books are made of paper and can be recycled, but may require special preparation to remove contaminants like magnets and plastic bags.",
+    "preparation_steps": [
+      "Remove any plastic bags or extra items",
+      "Check local guidelines for specific recycling requirements"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "phone-books.md"
+  },
+  {
+    "item": "Pillows",
+    "aliases": [
+      "Throw Pillows",
+      "Cushions"
+    ],
+    "category": "non_recyclable",
+    "bin_color": "grey",
+    "bin_label": "Non-Recyclable Waste",
+    "recyclable": false,
+    "reason": "Most recycling programs do not accept pillows in curbside bins due to contamination concerns and limited recycling options.",
+    "preparation_steps": [
+      "Wash the pillow with a reduced amount of soap",
+      "Dry the pillow in a short dryer cycle, then air-dry",
+      "Vacuum the pillow before washing for extra cleaning"
+    ],
+    "safety_notes": "Be cautious when handling pillows contaminated with bodily fluids or oils, as they can pose medical concerns.",
+    "special_facility_required": true,
+    "source_file": "pillows.md"
+  },
+  {
+    "item": "Plastic Bags",
+    "aliases": [
+      "Produce Bags",
+      "Grocery Bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic bags can be recycled into new products, reducing marine debris and conserving natural resources. They are made from recyclable materials (#2 and #4 plastics).",
+    "preparation_steps": [
+      "Remove anything inside the bags, such as receipts, stickers, or crumbs.",
+      "Keep a bag collection bin in your house, such as one big garbage bag for all bags.",
+      "Make sure any bags you are recycling have a #2 or #4 plastic symbol on them."
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-bags.md"
+  },
+  {
+    "item": "Plastic Caps & Lids",
+    "aliases": [
+      "plastic bottle caps",
+      "plastic lids"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic caps and lids are made of recyclable plastic resins (#2 or #5) and can be processed into new products, reducing waste and conserving natural resources.",
+    "preparation_steps": [
+      "Check with your local recycling program to see if they accept plastic caps and lids with bottles or separately",
+      "For non-bottle plastics, reattach lids if made of the same material as the base"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-caps-lids.md"
+  },
+  {
+    "item": "Plastic Bottles & Jugs",
+    "aliases": [
+      "plastic jugs",
+      "plastic bottles"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic bottles and jugs are made from recyclable plastics #1 (PET) and #2 (HDPE), which can be collected and processed into new products, reducing marine debris and conserving natural resources.",
+    "preparation_steps": [
+      "Rinse bottles and jugs before recycling",
+      "Check with local program whether to keep caps on or off",
+      "Leave labels on, but they may not be recycled"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "plastic-jugs-bottles.md"
+  },
+  {
+    "item": "Plastic Wrap & Film",
+    "aliases": [
+      "plastic film",
+      "plastic bags"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Plastic wrap and film are made from recyclable plastic resins, but require special handling to prevent tangling sorting equipment.",
+    "preparation_steps": [
+      "Ensure plastic wrap or film is clean and completely dry",
+      "Take it to a designated drop-off location or specialized recycling program"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "plastic-wrap-film.md"
+  },
+  {
+    "item": "Rechargeable Batteries",
+    "aliases": [
+      "Nickel-Cadmium (Ni-Cd) batteries",
+      "Nickel Metal Hydride (NiMH) batteries",
+      "Lithium-ion (Li-ion) batteries"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Rechargeable batteries contain hazardous materials like mercury, lead, cadmium, nickel, silver, cobalt, lithium, or graphite that require special handling and recycling to prevent environmental contamination.",
+    "preparation_steps": [
+      "Turn off your device before removing batteries.",
+      "Inspect the battery for any leakage and handle it with extra care if damaged.",
+      "Store damaged batteries in a non-flammable material like sand or kitty litter.",
+      "Clean the inside of your device after removing a damaged battery.",
+      "Store spent batteries so that their active ends are not touching, either by taping the ends or lining them up in a box."
+    ],
+    "safety_notes": "Damaged batteries can be hazardous and may cause fires. Handle them with care and check with your battery recycler for specific instructions.",
+    "special_facility_required": true,
+    "source_file": "rechargeable-batteries.md"
+  },
+  {
+    "item": "Shingles",
+    "aliases": [
+      "Asphalt Shingles",
+      "Roofing Shingles"
+    ],
+    "category": "construction",
+    "bin_color": "grey",
+    "bin_label": "Construction Waste",
+    "recyclable": true,
+    "reason": "Asphalt shingles can be recycled into asphalt pavement for roadways, reducing waste and conserving natural resources.",
+    "preparation_steps": [
+      "Ensure shingles are free of debris and contaminants",
+      "Check with local recycling facilities for accepted materials and preparation guidelines"
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "shingles.md"
+  },
+  {
+    "item": "Shredded Paper",
+    "aliases": [
+      "Shredded Documents",
+      "Shredded Paper Products"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Shredded paper can be recycled, but requires special handling due to potential contaminants and machinery safety concerns.",
+    "preparation_steps": [
+      "If shredding paper at home, operate the shredder safely by reading the manual.",
+      "When ready to recycle, check with local recycling programs for drop-off locations or special collection events."
+    ],
+    "safety_notes": null,
+    "special_facility_required": true,
+    "source_file": "shredded-paper.md"
+  },
+  {
+    "item": "Small Appliances",
+    "aliases": [
+      "Electronics",
+      "Appliances"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Small appliances contain valuable materials like steel, gold, and copper that can be recycled and reused.",
+    "preparation_steps": [
+      "Unplug your appliance for several days before recycling to let it cool down.",
+      "Tie up the power cord using either a twist tie or the cord itself (or tape it to the unit) for heavier appliances.",
+      "Consider donating it to a thrift store if it's still in working condition.",
+      "Remove non-metal parts prior to recycling."
+    ],
+    "safety_notes": "Never place small electronics in the curbside bin as they can contaminate other materials.",
+    "special_facility_required": true,
+    "source_file": "small-appliances.md"
+  },
+  {
+    "item": "Small Electronics",
+    "aliases": [
+      "Electronics",
+      "E-Waste",
+      "Small E-Waste"
+    ],
+    "category": "e_waste",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Small electronics contain hazardous materials like heavy metals and toxic chemicals that require specialized recycling to prevent environmental harm.",
+    "preparation_steps": [
+      "Factory reset your electronics and delete personal data",
+      "Remove lithium-ion batteries if possible",
+      "Look for mail-in programs or charities that accept small electronics",
+      "Check with your company's IT department for office recycling events"
+    ],
+    "safety_notes": "Handle with care, as small electronics may contain sharp edges or hazardous materials.",
+    "special_facility_required": true,
+    "source_file": "small-electronics.md"
+  },
+  {
+    "item": "Tin or Steel Cans",
+    "aliases": [
+      "Steel Cans",
+      "Bi-metal Cans"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Steel cans are made of recyclable metal and can be recycled infinitely with no loss of quality.",
+    "preparation_steps": [
+      "Rinse cans to remove any leftover food",
+      "Remove the lid and insert it into the can",
+      "Pinch the top of the can to close it"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "tin-or-steel-cans.md"
+  },
+  {
+    "item": "Tires",
+    "aliases": [],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": true,
+    "reason": "Tires can be recycled into various products, and improper disposal can lead to environmental issues such as attracting rodents and mosquitoes, contributing to methane emissions, and creating fire risks.",
+    "preparation_steps": [
+      "Ask an auto shop if your old tires can be retreaded or repaired.",
+      "If having tires replaced at an auto shop, ask if the shop will recycle the old tires for you.",
+      "Remove the rim and wheel weights before recycling tires yourself.",
+      "Consider a reuse project for tires, such as making planters or compost bins."
+    ],
+    "safety_notes": "Exercise caution when cutting the tire off the rim yourself, as it requires experience with power tools.",
+    "special_facility_required": true,
+    "source_file": "tires.md"
+  },
+  {
+    "item": "Unwanted or Expired Medications",
+    "aliases": [
+      "Medications",
+      "Prescription Drugs",
+      "Expired Medicines"
+    ],
+    "category": "hazardous",
+    "bin_color": "red",
+    "bin_label": "Hazardous Waste",
+    "recyclable": false,
+    "reason": "Medications are hazardous and require special disposal to prevent harm to humans and the environment.",
+    "preparation_steps": [
+      "Pour medication into a sealable plastic bag. If the medication is a solid (pill, liquid capsule, etc.), add water to dissolve it.",
+      "Add kitty litter, sawdust or coffee grounds (or any material that mixes with the medication and makes it less appealing for pets and children to eat) to the plastic bag.",
+      "Seal the plastic bag and put it in the trash.",
+      "Remove and destroy all identifying personal information on the prescription label from all medication containers before recycling them or throwing them away."
+    ],
+    "safety_notes": "Responsible medication disposal is crucial for human and environmental health. Follow any disposal instructions on the medication package, and use take-back or mail-back programs if available.",
+    "special_facility_required": false,
+    "source_file": "unwanted-or-expired-medications.md"
+  },
+  {
+    "item": "Waxed Cardboard",
+    "aliases": [
+      "Waxed Corrugated Cardboard",
+      "Polyethylene-Lined Cardboard"
+    ],
+    "category": "dry_waste",
+    "bin_color": "blue",
+    "bin_label": "Dry Recyclable",
+    "recyclable": true,
+    "reason": "Waxed cardboard can be recycled with other dry recyclables, but it's not always accepted by all recycling programs.",
+    "preparation_steps": [
+      "Break down the boxes before recycling"
+    ],
+    "safety_notes": null,
+    "special_facility_required": false,
+    "source_file": "waxed-cardboard.md"
+  }
+]

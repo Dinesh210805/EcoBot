@@ -1,0 +1,924 @@
+{
+  "convert_to_json": {
+    "acrylic-plaques-and-awards.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:09",
+      "item": "Acrylic Plaques and Awards"
+    },
+    "aerosol-cans.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:11",
+      "item": "Aerosol Cans"
+    },
+    "aluminum-cans.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:14",
+      "item": "Aluminum Cans"
+    },
+    "aluminum-foil.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:16",
+      "item": "Aluminum Foil"
+    },
+    "automotive-fluids.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:20",
+      "item": "Automotive Fluids"
+    },
+    "bathroom-products.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:25",
+      "item": "Bathroom Products"
+    },
+    "books-magazines.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:27",
+      "item": "Books and Magazines"
+    },
+    "car-batteries.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:29",
+      "item": "Car Batteries"
+    },
+    "cardboard.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:31",
+      "item": "Cardboard"
+    },
+    "carpet.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:33",
+      "item": "Carpet"
+    },
+    "cartons.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:35",
+      "item": "Cartons"
+    },
+    "cds-tapes.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:37",
+      "item": "CDs & Tapes"
+    },
+    "cell-phones.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:39",
+      "item": "Cell Phones"
+    },
+    "cfls.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:41",
+      "item": "CFLs"
+    },
+    "christmas-trees.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:43",
+      "item": "Christmas Trees"
+    },
+    "clothing-accessories.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:44",
+      "item": "Clothing & Accessories"
+    },
+    "computer-monitors.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:48",
+      "item": "Computer Monitors"
+    },
+    "computers.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:50",
+      "item": "Computers"
+    },
+    "construction-waste.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:52",
+      "item": "Construction Waste"
+    },
+    "cooking-oil.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:54",
+      "item": "Cooking Oil"
+    },
+    "cookware.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:56",
+      "item": "Cookware"
+    },
+    "corks.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:35:58",
+      "item": "Corks"
+    },
+    "fluorescent-tubes.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:00",
+      "item": "Fluorescent Tubes"
+    },
+    "frozen-food-boxes.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:02",
+      "item": "Frozen Food Boxes"
+    },
+    "furniture.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:04",
+      "item": "Furniture"
+    },
+    "gift-cards-gift-wrap.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:06",
+      "item": "Gift Cards"
+    },
+    "glass-bottles-jars.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:08",
+      "item": "Glass Bottles & Jars"
+    },
+    "glass.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:11",
+      "item": "Glass"
+    },
+    "household-cleaners.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:15",
+      "item": "Household Cleaners"
+    },
+    "ink-cartridges.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:17",
+      "item": "Ink Cartridges"
+    },
+    "items-containing-mercury.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:20",
+      "item": "Items Containing Mercury"
+    },
+    "large-appliances.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:23",
+      "item": "Large Appliances"
+    },
+    "large-electronics.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:26",
+      "item": "Large Electronics"
+    },
+    "led-light-bulbs.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:29",
+      "item": "LED Light Bulbs"
+    },
+    "mattresses.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:31",
+      "item": "Mattresses"
+    },
+    "medical-sharps.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:33",
+      "item": "Medical Sharps"
+    },
+    "metal.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:35",
+      "item": "Metal"
+    },
+    "motor-oil-and-filters.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:37",
+      "item": "Motor Oil & Filters"
+    },
+    "newspaper.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:39",
+      "item": "Newspaper"
+    },
+    "packing-peanuts.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:41",
+      "item": "Packing Peanuts"
+    },
+    "paint.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:43",
+      "item": "Paint"
+    },
+    "paper-bags.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:45",
+      "item": "Paper Bags"
+    },
+    "paper-cups.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:47",
+      "item": "Paper Cups"
+    },
+    "paper.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:49",
+      "item": "Paper"
+    },
+    "paperboard.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:51",
+      "item": "Paperboard"
+    },
+    "pesticides-containers.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:55",
+      "item": "Pesticide Containers"
+    },
+    "phone-books.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:36:57",
+      "item": "phone books"
+    },
+    "pillows.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:00",
+      "item": "Pillows"
+    },
+    "plastic-bags.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:03",
+      "item": "Plastic Bags"
+    },
+    "plastic-caps-lids.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:05",
+      "item": "Plastic Caps & Lids"
+    },
+    "plastic-jugs-bottles.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:09",
+      "item": "Plastic Bottles & Jugs"
+    },
+    "plastic-wrap-film.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:11",
+      "item": "Plastic Wrap & Film"
+    },
+    "rechargeable-batteries.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:13",
+      "item": "Rechargeable Batteries"
+    },
+    "shingles.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:15",
+      "item": "Shingles"
+    },
+    "shredded-paper.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:17",
+      "item": "Shredded Paper"
+    },
+    "small-appliances.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:19",
+      "item": "Small Appliances"
+    },
+    "small-electronics.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:22",
+      "item": "Small Electronics"
+    },
+    "tin-or-steel-cans.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:25",
+      "item": "Tin or Steel Cans"
+    },
+    "tires.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:27",
+      "item": "Tires"
+    },
+    "unwanted-or-expired-medications.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:32",
+      "item": "Unwanted or Expired Medications"
+    },
+    "waxed-cardboard.md": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:37:34",
+      "item": "Waxed Cardboard"
+    }
+  },
+  "augment_dataset": {
+    "Acrylic Plaques and Awards": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:36",
+      "variations": 4
+    },
+    "Aerosol Cans": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:37",
+      "variations": 4
+    },
+    "Aluminum Cans": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:39",
+      "variations": 4
+    },
+    "Aluminum Foil": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:40",
+      "variations": 4
+    },
+    "Automotive Fluids": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:43",
+      "variations": 4
+    },
+    "plastic shampoo bottle": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:03",
+      "variations": 4
+    },
+    "Books and Magazines": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:45",
+      "variations": 4
+    },
+    "car batteries": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:06",
+      "variations": 0
+    },
+    "Cardboard": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:48",
+      "variations": 4
+    },
+    "carpet": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:09",
+      "variations": 4
+    },
+    "cartons": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:11",
+      "variations": 4
+    },
+    "CDs and Tapes": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:12",
+      "variations": 4
+    },
+    "cell phone": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:14",
+      "variations": 4
+    },
+    "CFLs": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:56",
+      "variations": 4
+    },
+    "Christmas Trees": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:58",
+      "variations": 4
+    },
+    "Clothing and Accessories": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:18",
+      "variations": 4
+    },
+    "Computer Monitor": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:19",
+      "variations": 4
+    },
+    "Computers": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:06",
+      "variations": 4
+    },
+    "Construction Waste": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:10",
+      "variations": 4
+    },
+    "Cooking Oil": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:12",
+      "variations": 4
+    },
+    "Cookware": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:15",
+      "variations": 4
+    },
+    "Corks": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:16",
+      "variations": 4
+    },
+    "Frozen Food Boxes": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:19",
+      "variations": 4
+    },
+    "Furniture": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:21",
+      "variations": 4
+    },
+    "Glass": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:28",
+      "variations": 4
+    },
+    "Household Cleaners": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:31",
+      "variations": 4
+    },
+    "Items Containing Mercury": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:35",
+      "variations": 4
+    },
+    "Large Electronics": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:39",
+      "variations": 4
+    },
+    "LED Light Bulbs": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:44",
+      "variations": 4
+    },
+    "Mattress": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:42",
+      "variations": 0
+    },
+    "Medical Sharps": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:50",
+      "variations": 4
+    },
+    "Motor Oil & Filters": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:53",
+      "variations": 4
+    },
+    "Paint": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:58",
+      "variations": 4
+    },
+    "Paper Bags": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:00",
+      "variations": 4
+    },
+    "Paper Cups": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:03",
+      "variations": 4
+    },
+    "Paper": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:04",
+      "variations": 4
+    },
+    "Paperboard": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:06",
+      "variations": 4
+    },
+    "Pesticide Containers": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:07",
+      "variations": 4
+    },
+    "Phone Books": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:43:56",
+      "variations": 4
+    },
+    "Pillows": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:13",
+      "variations": 4
+    },
+    "Plastic Bags": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:15",
+      "variations": 4
+    },
+    "Plastic Caps & Lids": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:17",
+      "variations": 4
+    },
+    "Plastic Wrap & Film": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:20",
+      "variations": 4
+    },
+    "Rechargeable Batteries": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:23",
+      "variations": 4
+    },
+    "Shredded Paper": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:27",
+      "variations": 4
+    },
+    "Small Appliances": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:29",
+      "variations": 4
+    },
+    "Small Electronics": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:31",
+      "variations": 4
+    },
+    "Steel Cans": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:09",
+      "variations": 0
+    },
+    "Unwanted or Expired Medications": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:39",
+      "variations": 4
+    },
+    "Waxed Cardboard": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:41",
+      "variations": 4
+    },
+    "Fluorescent Tubes": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:18",
+      "variations": 4
+    },
+    "Glass Bottles & Jars": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:26",
+      "variations": 4
+    },
+    "Inkjet and Toner Cartridges": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:17",
+      "variations": 4
+    },
+    "Large Appliances": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:37",
+      "variations": 0
+    },
+    "Scrap Metal": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:23",
+      "variations": 0
+    },
+    "Newspaper": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:55",
+      "variations": 4
+    },
+    "Packing Peanuts": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:56",
+      "variations": 4
+    },
+    "Plastic Bottles & Jugs": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:19",
+      "variations": 4
+    },
+    "Shingles": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:26",
+      "variations": 4
+    },
+    "Tires": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:36",
+      "variations": 4
+    },
+    "Gift Cards": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:24",
+      "variations": 4
+    },
+    "Bathroom Products": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:44",
+      "variations": 4
+    },
+    "Car Batteries": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:47",
+      "variations": 4
+    },
+    "Carpet": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:50",
+      "variations": 4
+    },
+    "Cartons": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:51",
+      "variations": 4
+    },
+    "CDs & Tapes": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:53",
+      "variations": 4
+    },
+    "Cell Phones": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:44:55",
+      "variations": 4
+    },
+    "Clothing & Accessories": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:00",
+      "variations": 4
+    },
+    "Computer Monitors": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:04",
+      "variations": 4
+    },
+    "Ink Cartridges": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:33",
+      "variations": 4
+    },
+    "Mattresses": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:48",
+      "variations": 0
+    },
+    "Metal": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:45:51",
+      "variations": 4
+    },
+    "phone books": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:09",
+      "variations": 4
+    },
+    "Tin or Steel Cans": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:35",
+      "variations": 0
+    },
+    "agarbatti ash": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:43",
+      "variations": 4
+    },
+    "clay diya": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:45",
+      "variations": 0
+    },
+    "steel tiffin box": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:47",
+      "variations": 4
+    },
+    "coconut shell": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:49",
+      "variations": 0
+    },
+    "paan wrapper": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:51",
+      "variations": 4
+    },
+    "prasad packaging": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:52",
+      "variations": 4
+    },
+    "jute bag": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:54",
+      "variations": 4
+    },
+    "brass pooja items": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:55",
+      "variations": 4
+    },
+    "thermocol packaging": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:46:57",
+      "variations": 4
+    },
+    "old saree": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:00",
+      "variations": 0
+    },
+    "newspaper bundle": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:04",
+      "variations": 4
+    },
+    "LED bulb": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:06",
+      "variations": 4
+    },
+    "expired medicine": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:09",
+      "variations": 4
+    },
+    "earthen pot": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:10",
+      "variations": 4
+    },
+    "autorickshaw battery": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:16",
+      "variations": 4
+    },
+    "coconut oil pouch": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:19",
+      "variations": 4
+    },
+    "sanitary napkin": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:21",
+      "variations": 4
+    },
+    "construction rubble": {
+      "status": "completed",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "completed_at": "2026-05-05T19:47:24",
+      "variations": 4
+    }
+  }
+}

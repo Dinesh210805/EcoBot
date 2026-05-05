@@ -116,7 +116,7 @@ python scraping/crawl_cpcb.py --source swm_rules_2016
 python scraping/convert_to_json.py
 ```
 
-Uses Groq (LLaMA 3 70B) to distill each earth911 article into a structured disposal guide JSON object.
+Uses Groq (LLaMA 4) to distill each earth911 article into a structured disposal guide JSON object.
 Output: `data/processed/disposal_guides.json`
 
 > This costs Groq API credits (~300–500 articles × 1 call each).

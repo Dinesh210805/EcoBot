@@ -40,7 +40,7 @@ def extract_pdf_text(pdf_bytes: bytes) -> str:
 def fetch_pdf(url: str) -> str | None:
     """Download a PDF and extract its text content."""
     try:
-        with httpx.Client(follow_redirects=True, timeout=PDF_DOWNLOAD_TIMEOUT) as client:
+        with httpx.Client(follow_redirects=True, timeout=PDF_DOWNLOAD_TIMEOUT, verify=False) as client:
             resp = client.get(url, headers={"User-Agent": "Mozilla/5.0 (research bot)"})
             resp.raise_for_status()
             return extract_pdf_text(resp.content)
@@ -55,7 +55,7 @@ def fetch_pdf(url: str) -> str | None:
 async def fetch_html(url: str) -> str | None:
     """Scrape an HTML page using Crawl4AI."""
     config = CrawlerRunConfig(
-        page_timeout=30000,
+        page_timeout=60000,
         remove_overlay_elements=True,
         excluded_tags=["nav", "footer", "header", "aside", "script", "style"],
         verbose=False,
@@ -64,7 +64,8 @@ async def fetch_html(url: str) -> str | None:
     async with AsyncWebCrawler(config=browser_cfg) as crawler:
         result = await crawler.arun(url=url, config=config)
         if not result.success:
-            print(f"  Crawl4AI error: {result.error_message}")
+            err = (result.error_message or "").encode("ascii", errors="replace").decode("ascii")
+            print(f"  Crawl4AI error: {err}")
             return None
         return result.markdown or result.cleaned_html or ""
 
@@ -105,7 +106,7 @@ async def main(only_source: str | None = None) -> None:
                 f"<!-- description: {source['description']} -->\n\n"
             )
             out_path.write_text(header + content, encoding="utf-8")
-            print(f"  Saved {len(content):,} chars → {out_path.name}")
+            print(f"  Saved {len(content):,} chars -> {out_path.name}")
             saved += 1
         else:
             print(f"  No content extracted — skipping")

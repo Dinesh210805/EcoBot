@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoBot — AI Waste Classification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">♻</span>
+        <span class="logo-text">EcoBot</span>
+      </a>
+      <div class="header-right">
+        <div class="health-badge" id="health-badge">
+          <span class="health-dot" id="health-dot"></span>
+          <span class="health-text" id="health-text">Checking…</span>
+        </div>
+        <a href="/docs" target="_blank" class="header-link">API Docs</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="pill-badge">
+        <span class="pill-dot"></span>
+        AI-Powered · India-Focused
+      </div>
+      <h1 class="hero-heading">Bin it right,<br><em>every time.</em></h1>
+      <p class="hero-sub">
+        Classify any waste item by text, image, or voice. Get bin color,
+        disposal steps, and nearby facilities — instantly.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Input Modes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Lookups</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-orb"></div>
+  </section>
+
+  <!-- MAIN INTERFACE -->
+  <main class="main-grid">
+
+    <!-- INPUT PANEL -->
+    <div class="panel input-panel">
+      <div class="panel-header">
+        <span class="panel-title">Classify Waste</span>
+        <span class="panel-hint">Choose an input method</span>
+      </div>
+
+      <!-- TABS -->
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="text">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18M3 10h18M3 15h12"/></svg>
+          Text
+        </button>
+        <button class="tab" role="tab" data-tab="image">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          Image
+        </button>
+        <button class="tab" role="tab" data-tab="voice">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          Voice
+        </button>
+        <button class="tab" role="tab" data-tab="batch">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          Batch
+        </button>
+        <button class="tab" role="tab" data-tab="chat" id="chat-tab">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Chat
+        </button>
+        <div class="tab-indicator" id="tab-indicator"></div>
+      </div>
+
+      <!-- TEXT PANEL -->
+      <div class="tab-panel active" id="panel-text">
+        <label class="field-label" for="text-input">What item do you want to classify?</label>
+        <textarea
+          id="text-input"
+          class="field-textarea"
+          rows="3"
+          placeholder="e.g. used alkaline battery, plastic milk jug, newspaper…"
+        ></textarea>
+        <label class="field-label" for="text-location">Location <span class="field-hint">(optional, for nearby facilities)</span></label>
+        <input id="text-location" class="field-input" type="text" placeholder="City or pincode" />
+        <button id="text-submit" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          Classify
+        </button>
+      </div>
+
+      <!-- IMAGE PANEL -->
+      <div class="tab-panel" id="panel-image">
+        <label class="field-label">Upload an image of the waste item</label>
+        <div class="dropzone" id="image-dropzone" tabindex="0" role="button" aria-label="Upload image">
+          <input type="file" id="image-file-input" accept="image/*" hidden />
+          <div class="dropzone-idle" id="image-dropzone-idle">
+            <div class="dropzone-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <p class="dropzone-text">Drop image here or <span class="dropzone-link">browse</span></p>
+            <p class="dropzone-hint">PNG, JPG, WEBP up to 10MB</p>
+          </div>
+          <div class="dropzone-preview" id="image-dropzone-preview" hidden>
+            <img id="image-preview-thumb" src="" alt="Preview" />
+            <span class="preview-filename" id="image-filename"></span>
+            <button class="preview-clear" id="image-clear" type="button" aria-label="Remove image">✕</button>
+          </div>
+        </div>
+        <label class="field-label" for="image-location">Location <span class="field-hint">(optional)</span></label>
+        <input id="image-location" class="field-input" type="text" placeholder="City or pincode" />
+        <button id="image-upload-btn" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Identify Image
+        </button>
+        <!-- Confirm Box -->
+        <div class="confirm-box" id="image-confirm-box" hidden>
+          <p class="confirm-question" id="image-confirm-question"></p>
+          <div class="confirm-actions">
+            <button id="image-confirm-yes" class="btn btn-confirm-yes">Yes, classify this</button>
+            <button id="image-confirm-no" class="btn btn-confirm-no">No, cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VOICE PANEL -->
+      <div class="tab-panel" id="panel-voice">
+        <label class="field-label">Upload an audio recording</label>
+        <div class="dropzone" id="voice-dropzone" tabindex="0" role="button" aria-label="Upload audio">
+          <input type="file" id="voice-file-input" accept="audio/*" hidden />
+          <div class="dropzone-idle" id="voice-dropzone-idle">
+            <div class="dropzone-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+            <p class="dropzone-text">Drop audio here or <span class="dropzone-link">browse</span></p>
+            <p class="dropzone-hint">MP3, WAV, M4A, OGG up to 25MB</p>
+          </div>
+          <div class="dropzone-file-selected" id="voice-dropzone-selected" hidden>
+            <div class="file-selected-icon">🎵</div>
+            <span class="voice-file-name" id="voice-file-name"></span>
+            <button class="preview-clear" id="voice-clear" type="button" aria-label="Remove audio">✕</button>
+          </div>
+        </div>
+        <label class="field-label" for="voice-location">Location <span class="field-hint">(optional)</span></label>
+        <input id="voice-location" class="field-input" type="text" placeholder="City or pincode" />
+        <button id="voice-upload-btn" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+          Transcribe &amp; Identify
+        </button>
+        <div class="confirm-box" id="voice-confirm-box" hidden>
+          <p class="confirm-question" id="voice-confirm-question"></p>
+          <div class="confirm-actions">
+            <button id="voice-confirm-yes" class="btn btn-confirm-yes">Yes, classify this</button>
+            <button id="voice-confirm-no" class="btn btn-confirm-no">No, cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BATCH PANEL -->
+      <div class="tab-panel" id="panel-batch">
+        <label class="field-label" for="batch-input">
+          Enter items, one per line
+          <span class="field-hint">(max 20)</span>
+        </label>
+        <textarea
+          id="batch-input"
+          class="field-textarea"
+          rows="6"
+          placeholder="plastic bottle&#10;used battery&#10;newspaper&#10;food scraps…"
+        ></textarea>
+        <p class="batch-counter" id="batch-counter">0 / 20 items</p>
+        <button id="batch-submit" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/></svg>
+          Classify All
+        </button>
+      </div>
+
+      <!-- CHAT PANEL -->
+      <div class="tab-panel" id="panel-chat">
+        <div class="chat-session-notice" id="chat-session-notice">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Classify an item first to start a chat session
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="chat-bubble bot">
+            <div class="bubble-avatar">🌿</div>
+            <div class="bubble-content">
+              Hi! I'm EcoBot. Classify a waste item using any tab, then return here to ask follow-up questions about disposal, recycling, or environmental impact.
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <input
+            id="chat-message-input"
+            class="chat-input"
+            type="text"
+            placeholder="Ask about disposal, recycling…"
+            disabled
+          />
+          <button id="chat-send-btn" class="btn btn-send" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULT PANEL -->
+    <div class="panel result-panel">
+      <div class="panel-header">
+        <span class="panel-title">Classification Result</span>
+      </div>
+      <div class="result-empty-state" id="result-empty-state">
+        <div class="empty-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 8v13H3V8"/><path d="M23 3H1v5h22V3z"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+        </div>
+        <p class="empty-text">Your classification result will appear here</p>
+        <p class="empty-sub">Try classifying a waste item using the panel on the left</p>
+      </div>
+      <div class="result-content" id="result-content" hidden></div>
+    </div>
+  </main>
+
+  <!-- BATCH RESULTS -->
+  <section class="section batch-section" id="batch-results-section" hidden>
+    <div class="section-header">
+      <h2 class="section-title">Batch Results</h2>
+      <div class="batch-summary" id="batch-summary"></div>
+    </div>
+    <div class="table-wrap">
+      <table class="batch-table" id="batch-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Bin</th>
+            <th>Recyclable</th>
+            <th>Confidence</th>
+          </tr>
+        </thead>
+        <tbody id="batch-table-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories-section">
+    <div class="section-header">
+      <h2 class="section-title">Waste Categories</h2>
+      <p class="section-sub">India's official waste segregation system</p>
+    </div>
+    <div class="categories-grid" id="categories-grid">
+      <div class="categories-loading">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section class="section" id="facilities-section">
+    <div class="section-header">
+      <h2 class="section-title">Find Disposal Facilities</h2>
+      <p class="section-sub">Locate verified recycling and disposal centers near you</p>
+    </div>
+    <div class="facilities-search">
+      <input id="facility-city" class="field-input" type="text" placeholder="City (e.g. Mumbai)" />
+      <input id="facility-pincode" class="field-input" type="text" placeholder="Pincode (optional)" />
+      <select id="facility-category" class="field-select">
+        <option value="">All categories</option>
+        <option value="wet_waste">Wet Waste</option>
+        <option value="dry_waste">Dry Recyclable</option>
+        <option value="hazardous">Hazardous Waste</option>
+        <option value="e_waste">E-Waste</option>
+        <option value="sanitary">Sanitary Waste</option>
+        <option value="construction">Construction Waste</option>
+        <option value="non_recyclable">Non-Recyclable</option>
+      </select>
+      <button id="facility-search-btn" class="btn btn-primary btn-search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </button>
+    </div>
+    <div id="facilities-results"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">♻</span>
+        <span>EcoBot</span>
+      </div>
+      <p class="footer-copy">Built for India's circular economy. Reducing landfill waste, one classification at a time.</p>
+      <div class="footer-links">
+        <a href="/docs" target="_blank">API Docs</a>
+        <a href="/redoc" target="_blank">ReDoc</a>
+        <a href="/api/v1/health" target="_blank">Health</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

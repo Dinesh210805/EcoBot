@@ -7,6 +7,7 @@ Output: data/finetuning/train.jsonl + data/finetuning/test.jsonl
 """
 import json
 import random
+import re
 import sys
 import time
 from pathlib import Path
@@ -16,17 +17,20 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from groq import Groq
 from backend.config import get_settings
 from backend.prompts import CLASSIFIER_SYSTEM
+from scraping.tracker import mark_done, mark_failed, completed_keys
 
 DISPOSAL_GUIDES = Path(__file__).resolve().parents[1] / "data" / "processed" / "disposal_guides.json"
 INDIA_SPECIFIC = Path(__file__).resolve().parents[1] / "data" / "processed" / "india_specific.json"
 TRAIN_FILE = Path(__file__).resolve().parents[1] / "data" / "finetuning" / "train.jsonl"
 TEST_FILE = Path(__file__).resolve().parents[1] / "data" / "finetuning" / "test.jsonl"
+PARTIAL_FILE = Path(__file__).resolve().parents[1] / "data" / "finetuning" / "augment_partial.jsonl"
 
 VARIATIONS_PER_ITEM = 4
-VARIATION_MODEL = "llama3-8b-8192"  # cheaper + faster than 70B for paraphrasing
+VARIATION_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
 SLEEP_BETWEEN_CALLS = 1.0
 RANDOM_SEED = 42
 TEST_SPLIT = 0.10
+STAGE = "augment_dataset"
 
 VARIATION_PROMPT = """Generate {n} different ways a person might ask or describe this waste item: "{item}"
 
@@ -62,23 +66,49 @@ def guide_to_output(guide: dict) -> dict:
     }
 
 
-def generate_variations(client: Groq, item: str) -> list[str]:
-    try:
-        completion = client.chat.completions.create(
-            model=VARIATION_MODEL,
-            messages=[
-                {"role": "user", "content": VARIATION_PROMPT.format(item=item, n=VARIATIONS_PER_ITEM)},
-            ],
-            temperature=0.8,
-            max_tokens=512,
-        )
-        raw = completion.choices[0].message.content.strip()
-        raw = raw.replace("```json", "").replace("```", "").strip()
-        variations = json.loads(raw)
-        return [v for v in variations if isinstance(v, str)][:VARIATIONS_PER_ITEM]
-    except Exception as e:
-        print(f"  Variation error for '{item}': {e}")
-        return []
+def build_clients(settings) -> list[Groq]:
+    keys = [settings.groq_api_key]
+    if settings.groq_api_key_2:
+        keys.append(settings.groq_api_key_2)
+    if settings.groq_api_key_3:
+        keys.append(settings.groq_api_key_3)
+    return [Groq(api_key=k) for k in keys]
+
+
+def generate_variations(clients: list[Groq], item: str, key_index: int) -> tuple[list[str], int]:
+    n = len(clients)
+    for attempt in range(n * 3):
+        client = clients[key_index % n]
+        key_label = f"key{(key_index % n) + 1}"
+        try:
+            completion = client.chat.completions.create(
+                model=VARIATION_MODEL,
+                messages=[
+                    {"role": "user", "content": VARIATION_PROMPT.format(item=item, n=VARIATIONS_PER_ITEM)},
+                ],
+                temperature=0.8,
+                max_tokens=512,
+            )
+            raw = completion.choices[0].message.content.strip()
+            raw = raw.replace("```json", "").replace("```", "").strip()
+            variations = json.loads(raw)
+            return [v for v in variations if isinstance(v, str)][:VARIATIONS_PER_ITEM], (key_index + 1) % n
+        except Exception as e:
+            err_str = str(e)
+            wait_match = re.search(r"try again in ([0-9.]+)s", err_str)
+            if wait_match:
+                next_key = (key_index + 1) % n
+                if next_key != key_index % n:
+                    print(f"  [{key_label}] rate limited -- switching to key{next_key + 1}", end=" ", flush=True)
+                    key_index = next_key
+                    continue
+                wait = float(wait_match.group(1)) + 1
+                print(f"  All keys rate limited -- waiting {wait:.0f}s...", end=" ", flush=True)
+                time.sleep(wait)
+                continue
+            print(f"  Variation error for '{item}': {e}")
+            return [], (key_index + 1) % n
+    return [], (key_index + 1) % n
 
 
 def load_guides() -> list[dict]:
@@ -96,43 +126,59 @@ def load_guides() -> list[dict]:
 
 def main() -> None:
     settings = get_settings()
-    client = Groq(api_key=settings.groq_api_key)
+    clients = build_clients(settings)
+    print(f"Loaded {len(clients)} Groq API key(s) -- round-robin enabled")
 
-    print("Loading disposal guides…")
+    print("Loading disposal guides...")
     guides = load_guides()
     if not guides:
-        print("No guides loaded — run convert_to_json.py first.")
+        print("No guides loaded -- run convert_to_json.py first.")
         sys.exit(1)
 
     print(f"Total guides: {len(guides)}")
 
     TRAIN_FILE.parent.mkdir(parents=True, exist_ok=True)
 
+    done = completed_keys(STAGE)
+    print(f"Tracker: {len(done)} items already augmented")
+
+    # Load previously saved partial entries
     all_entries: list[dict] = []
+    if PARTIAL_FILE.exists():
+        with open(PARTIAL_FILE, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    all_entries.append(json.loads(line))
+        print(f"Resumed {len(all_entries)} partial entries from disk")
 
-    for i, guide in enumerate(guides, 1):
-        item_name = guide.get("item", "")
-        if not item_name:
-            continue
+    key_index = 0
+    pending = [g for g in guides if g.get("item") and g["item"] not in done]
+    print(f"Pending: {len(pending)} items")
 
-        print(f"[{i}/{len(guides)}] {item_name}… ", end="", flush=True)
-        output = guide_to_output(guide)
+    with open(PARTIAL_FILE, "a", encoding="utf-8") as partial_f:
+        for i, guide in enumerate(pending, 1):
+            item_name = guide["item"]
+            print(f"[{i}/{len(pending)}] {item_name}... ", end="", flush=True)
+            output = guide_to_output(guide)
 
-        # Canonical name
-        all_entries.append(build_alpaca_entry(item_name, output))
+            item_entries: list[dict] = [build_alpaca_entry(item_name, output)]
+            for alias in guide.get("aliases", []):
+                if alias:
+                    item_entries.append(build_alpaca_entry(alias, output))
 
-        # Aliases (no LLM cost)
-        for alias in guide.get("aliases", []):
-            if alias:
-                all_entries.append(build_alpaca_entry(alias, output))
+            variations, key_index = generate_variations(clients, item_name, key_index)
+            for v in variations:
+                item_entries.append(build_alpaca_entry(v, output))
 
-        # LLM variations
-        variations = generate_variations(client, item_name)
-        for v in variations:
-            all_entries.append(build_alpaca_entry(v, output))
+            for e in item_entries:
+                partial_f.write(json.dumps(e, ensure_ascii=False) + "\n")
+            partial_f.flush()
 
-        print(f"{len(variations)} variations  (total so far: {len(all_entries)})")
-        time.sleep(SLEEP_BETWEEN_CALLS)
+            all_entries.extend(item_entries)
+            mark_done(STAGE, item_name, VARIATION_MODEL, variations=len(variations))
+            print(f"{len(variations)} variations  (total so far: {len(all_entries)})")
+            time.sleep(SLEEP_BETWEEN_CALLS)
 
     # Shuffle and split
     rng = random.Random(RANDOM_SEED)

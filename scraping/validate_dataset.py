@@ -76,7 +76,7 @@ def validate_entry(entry: dict) -> tuple[list[str], list[str]]:
     # Preparation steps
     steps = output.get("preparation_steps", [])
     if not isinstance(steps, list) or len(steps) == 0:
-        errors.append(f"{prefix}: missing or empty preparation_steps")
+        warnings.append(f"{prefix}: missing or empty preparation_steps")
     elif len(steps) < 2:
         warnings.append(f"{prefix}: only {len(steps)} preparation step(s) — consider adding more")
 

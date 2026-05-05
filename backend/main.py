@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -60,6 +60,11 @@ upload_dir = Path(settings.upload_dir)
 upload_dir.mkdir(parents=True, exist_ok=True)
 app.mount("/uploads", StaticFiles(directory=str(upload_dir)), name="uploads")
 
+# Frontend static files
+frontend_dir = Path(__file__).parent.parent / "frontend"
+if frontend_dir.exists():
+    app.mount("/static", StaticFiles(directory=str(frontend_dir)), name="static")
+
 # API routers
 API_PREFIX = "/api/v1"
 app.include_router(classify_router, prefix=API_PREFIX)
@@ -84,9 +89,7 @@ async def generic_error_handler(request: Request, exc: Exception):
 
 @app.get("/", tags=["root"])
 async def root():
-    return {
-        "name": "EcoBot API",
-        "version": "1.0.0",
-        "docs": "/docs",
-        "health": "/api/v1/health",
-    }
+    index = Path(__file__).parent.parent / "frontend" / "index.html"
+    if index.exists():
+        return FileResponse(str(index))
+    return {"name": "EcoBot API", "version": "1.0.0", "docs": "/docs", "health": "/api/v1/health"}
