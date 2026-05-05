@@ -1,14 +1,14 @@
 """
-Generate training data augmentation — creates input variations for fine-tuning.
-Takes the waste_items.csv and generates Alpaca-format instruction pairs.
+Generate Alpaca-format fine-tuning dataset from disposal_guides.json + india_specific.json.
+Uses LLaMA 3 8B to generate 4 phrasing variations per item, then splits 90/10 train/test.
 
-Run: python scraping/augment_dataset.py --output data/finetuning/train_augmented.jsonl --per-item 5
+Run: python scraping/augment_dataset.py
+Output: data/finetuning/train.jsonl + data/finetuning/test.jsonl
 """
-import argparse
-import csv
 import json
 import random
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -17,103 +17,143 @@ from groq import Groq
 from backend.config import get_settings
 from backend.prompts import CLASSIFIER_SYSTEM
 
-settings = get_settings()
-client = Groq(api_key=settings.groq_api_key)
+DISPOSAL_GUIDES = Path(__file__).resolve().parents[1] / "data" / "processed" / "disposal_guides.json"
+INDIA_SPECIFIC = Path(__file__).resolve().parents[1] / "data" / "processed" / "india_specific.json"
+TRAIN_FILE = Path(__file__).resolve().parents[1] / "data" / "finetuning" / "train.jsonl"
+TEST_FILE = Path(__file__).resolve().parents[1] / "data" / "finetuning" / "test.jsonl"
 
-VARIATION_PROMPT = """Generate {n} different ways a person might describe or ask about this waste item: "{item}"
+VARIATIONS_PER_ITEM = 4
+VARIATION_MODEL = "llama3-8b-8192"  # cheaper + faster than 70B for paraphrasing
+SLEEP_BETWEEN_CALLS = 1.0
+RANDOM_SEED = 42
+TEST_SPLIT = 0.10
 
-Include casual language, Indian English, common misspellings, partial descriptions.
-Examples: "old phone", "my samsung died", "broken charger wire", "paani ki bottle"
+VARIATION_PROMPT = """Generate {n} different ways a person might ask or describe this waste item: "{item}"
 
-Return a JSON array of strings. Return ONLY the array."""
+Mix formal and casual language. Include:
+- Casual phrasing ("my old phone", "broken charger")
+- Indian English ("paani ki bottle", "kadak carton")
+- Common misspellings ("baterry", "plastik bag")
+- Partial descriptions ("the foil thing from medicine pack")
+- Context clues ("leftover paint from renovation")
 
-WASTE_ITEMS_CSV = Path(__file__).resolve().parents[1] / "data" / "waste_items.csv"
-
-
-def generate_variations(item: str, n: int) -> list[str]:
-    completion = client.chat.completions.create(
-        model=settings.groq_classifier_model,
-        messages=[
-            {"role": "user", "content": VARIATION_PROMPT.format(item=item, n=n)},
-        ],
-        temperature=0.9,
-        max_tokens=512,
-    )
-    raw = completion.choices[0].message.content.strip()
-    if raw.startswith("```"):
-        lines = raw.split("\n")
-        raw = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
-    variations = json.loads(raw)
-    return [v for v in variations if isinstance(v, str)]
+Return ONLY a JSON array of strings, no extra text."""
 
 
 def build_alpaca_entry(input_text: str, output: dict) -> dict:
     return {
         "instruction": CLASSIFIER_SYSTEM,
         "input": f"Classify this waste item: {input_text}",
-        "output": json.dumps(output, ensure_ascii=False),
+        "output": output,  # dict, not a JSON string
     }
 
 
-def load_waste_items() -> list[dict]:
-    items = []
-    with open(WASTE_ITEMS_CSV, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            items.append(row)
-    return items
+def guide_to_output(guide: dict) -> dict:
+    return {
+        "category": guide.get("category", ""),
+        "bin_color": guide.get("bin_color", ""),
+        "bin_label": guide.get("bin_label", ""),
+        "recyclable": guide.get("recyclable", False),
+        "confidence": "high",
+        "reason": guide.get("reason", ""),
+        "preparation_steps": guide.get("preparation_steps", []),
+        "safety_notes": guide.get("safety_notes"),
+        "special_facility_required": guide.get("special_facility_required", False),
+    }
 
 
-def main(output_file: Path, per_item: int):
-    items = load_waste_items()
-    output_file.parent.mkdir(parents=True, exist_ok=True)
+def generate_variations(client: Groq, item: str) -> list[str]:
+    try:
+        completion = client.chat.completions.create(
+            model=VARIATION_MODEL,
+            messages=[
+                {"role": "user", "content": VARIATION_PROMPT.format(item=item, n=VARIATIONS_PER_ITEM)},
+            ],
+            temperature=0.8,
+            max_tokens=512,
+        )
+        raw = completion.choices[0].message.content.strip()
+        raw = raw.replace("```json", "").replace("```", "").strip()
+        variations = json.loads(raw)
+        return [v for v in variations if isinstance(v, str)][:VARIATIONS_PER_ITEM]
+    except Exception as e:
+        print(f"  Variation error for '{item}': {e}")
+        return []
 
-    total = 0
-    with open(output_file, "w", encoding="utf-8") as out:
-        for i, item in enumerate(items, 1):
-            print(f"[{i}/{len(items)}] {item['name']}...")
 
-            # Build the ground-truth output
-            gt_output = {
-                "category": item["category"],
-                "bin_color": item["bin_color"],
-                "bin_label": item["bin_label"],
-                "recyclable": item["recyclable"] in ("1", "true", "True", True),
-                "confidence": "high",
-                "reason": f"{item['name']} is {item['category'].replace('_', ' ')}.",
-                "preparation_steps": json.loads(item.get("preparation_steps", "[]")),
-                "safety_notes": item.get("safety_notes") or None,
-                "special_facility_required": item["special_facility_required"] in ("1", "true", "True", True),
-            }
+def load_guides() -> list[dict]:
+    guides = []
+    for path in (DISPOSAL_GUIDES, INDIA_SPECIFIC):
+        if path.exists():
+            with open(path) as f:
+                data = json.load(f)
+                guides.extend(data)
+                print(f"  Loaded {len(data)} entries from {path.name}")
+        else:
+            print(f"  WARNING: {path.name} not found — skipping")
+    return guides
 
-            # Canonical name entry
-            entry = build_alpaca_entry(item["name"], gt_output)
-            out.write(json.dumps(entry, ensure_ascii=False) + "\n")
-            total += 1
 
-            # Alias entries
-            aliases = json.loads(item.get("aliases", "[]"))
-            for alias in aliases:
-                entry = build_alpaca_entry(alias, gt_output)
-                out.write(json.dumps(entry, ensure_ascii=False) + "\n")
-                total += 1
+def main() -> None:
+    settings = get_settings()
+    client = Groq(api_key=settings.groq_api_key)
 
-            # LLM-generated variations
-            try:
-                variations = generate_variations(item["name"], per_item)
-                for v in variations:
-                    entry = build_alpaca_entry(v, gt_output)
-                    out.write(json.dumps(entry, ensure_ascii=False) + "\n")
-                    total += 1
-            except Exception as e:
-                print(f"  Variation generation failed: {e}")
+    print("Loading disposal guides…")
+    guides = load_guides()
+    if not guides:
+        print("No guides loaded — run convert_to_json.py first.")
+        sys.exit(1)
 
-    print(f"\nGenerated {total} training examples → {output_file}")
+    print(f"Total guides: {len(guides)}")
+
+    TRAIN_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    all_entries: list[dict] = []
+
+    for i, guide in enumerate(guides, 1):
+        item_name = guide.get("item", "")
+        if not item_name:
+            continue
+
+        print(f"[{i}/{len(guides)}] {item_name}… ", end="", flush=True)
+        output = guide_to_output(guide)
+
+        # Canonical name
+        all_entries.append(build_alpaca_entry(item_name, output))
+
+        # Aliases (no LLM cost)
+        for alias in guide.get("aliases", []):
+            if alias:
+                all_entries.append(build_alpaca_entry(alias, output))
+
+        # LLM variations
+        variations = generate_variations(client, item_name)
+        for v in variations:
+            all_entries.append(build_alpaca_entry(v, output))
+
+        print(f"{len(variations)} variations  (total so far: {len(all_entries)})")
+        time.sleep(SLEEP_BETWEEN_CALLS)
+
+    # Shuffle and split
+    rng = random.Random(RANDOM_SEED)
+    rng.shuffle(all_entries)
+
+    split_idx = int(len(all_entries) * (1 - TEST_SPLIT))
+    train_entries = all_entries[:split_idx]
+    test_entries = all_entries[split_idx:]
+
+    def write_jsonl(path: Path, entries: list[dict]) -> None:
+        with open(path, "w", encoding="utf-8") as f:
+            for entry in entries:
+                f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+    write_jsonl(TRAIN_FILE, train_entries)
+    write_jsonl(TEST_FILE, test_entries)
+
+    print(f"\nDone!")
+    print(f"  Train: {len(train_entries):,} examples → {TRAIN_FILE}")
+    print(f"  Test:  {len(test_entries):,} examples → {TEST_FILE}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--output", default="data/finetuning/train_augmented.jsonl")
-    parser.add_argument("--per-item", type=int, default=5)
-    args = parser.parse_args()
-    main(Path(args.output), args.per_item)
+    main()

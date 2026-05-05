@@ -1,0 +1,39 @@
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+data/ecobot.db
+
+# Vector DB
+embeddings/chroma_db/
+
+# Data (Uncomment if you want to ignore downloaded datasets)
+# data/raw/
+# data/processed/
+# data/finetuning/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/

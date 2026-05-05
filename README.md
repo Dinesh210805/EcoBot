@@ -132,10 +132,15 @@ EcoBot/
 │   └── seed_chromadb.py         # Embed processed JSON into ChromaDB
 │
 ├── scraping/
-│   ├── crawl_earth911.py        # Crawl4AI scraper for Earth911 guides
-│   ├── crawl_cpcb.py            # Firecrawl PDF parser for CPCB documents
-│   ├── convert_to_json.py       # Groq distillation: raw markdown → structured JSON
-│   └── augment_dataset.py       # Generate Alpaca training pairs from waste_items.csv
+│   ├── get_earth911_urls.py     # Step 1: collect article URLs from earth911.com
+│   ├── crawl_earth911.py        # Step 2: Crawl4AI scraper (batched, resumable)
+│   ├── cpcb_sources.py          # CPCB source list (URLs + metadata)
+│   ├── crawl_cpcb.py            # Step 3: Firecrawl for CPCB government PDFs
+│   ├── convert_to_json.py       # Step 4: Groq 70B distillation → disposal_guides.json
+│   ├── augment_dataset.py       # Step 6: Alpaca pairs + variations → train/test split
+│   ├── validate_dataset.py      # Step 7: hard error / soft warning checks
+│   ├── ingest_chromadb.py       # Step 8: embed + upsert into ChromaDB (3 collections)
+│   └── test_retrieval.py        # Step 9: sanity-check retrieval quality
 │
 ├── data/
 │   ├── facilities.csv           # 15 real Indian recycling facilities (seed data)
@@ -387,51 +392,74 @@ Set `CLASSIFIER_MODE=ollama` in your `.env` to use the fine-tuned model.
 
 ## Knowledge Base Setup
 
-The RAG system uses three ChromaDB collections. You can populate them in two ways:
+The RAG system uses three ChromaDB collections populated by a 9-step scraping pipeline in `scraping/`.
 
-### Option A — Bring your own JSON (recommended)
-
-Place structured JSON files in `data/processed/` with the expected format:
-
-```json
-[
-  {
-    "id": "unique-id",
-    "text": "Dispose of AA batteries at designated drop-off points...",
-    "metadata": {"category": "hazardous", "item": "battery"}
-  }
-]
-```
-
-Then seed ChromaDB:
+### Full pipeline (Step 1 → 9)
 
 ```bash
-python -m scripts.seed_chromadb --clear
+# Step 1 — Collect Earth911 article URLs (~550 recycling guides)
+python scraping/get_earth911_urls.py
+# Output: data/raw/earth911_urls.json
+
+# Step 2 — Scrape Earth911 articles (Crawl4AI, batches of 5, 2s delay)
+python scraping/crawl_earth911.py
+# Output: data/raw/earth911/<slug>.md  (one file per guide)
+
+# Step 3 — Fetch CPCB government documents (Firecrawl, free tier ~500 pages/month)
+# Requires FIRECRAWL_API_KEY in .env
+python scraping/crawl_cpcb.py
+# Output: data/raw/cpcb_pdfs/<name>.md
+
+# Step 4 — Distill raw markdown → structured JSON (Groq LLaMA 3 70B, ~2s/file)
+python scraping/convert_to_json.py
+# Output: data/processed/disposal_guides.json
+
+# Step 5 — (Manual) Add India-specific items not on Earth911
+# Create data/processed/india_specific.json with items like agarbatti ash, clay diya, etc.
+# Use the same schema as disposal_guides.json
+
+# Step 6 — Augment: generate Alpaca training pairs + 4 phrasing variations/item (LLaMA 3 8B)
+python scraping/augment_dataset.py
+# Output: data/finetuning/train.jsonl + data/finetuning/test.jsonl  (90/10 split)
+
+# Step 7 — Validate dataset (hard errors block; soft warnings reviewed)
+python scraping/validate_dataset.py
+# Exit code 1 if hard errors found — fix before proceeding
+
+# Step 8 — Ingest into ChromaDB (all-MiniLM-L6-v2 embeddings, batch 100)
+python scraping/ingest_chromadb.py
+# Populates: disposal_guides, env_facts, product_kb collections
+
+# Step 9 — Verify retrieval quality
+python scraping/test_retrieval.py
+# Prints distance + HIGH/MEDIUM/LOW confidence for 9 test queries
 ```
 
-### Option B — Distill from raw scraped markdown
+### Quick start (bring your own JSON)
 
-If you have raw markdown or text files in `data/raw/`, use the Groq distillation script to convert them to the structured JSON format above:
+If you already have structured JSON, skip Steps 1–5 and jump straight to ingestion:
 
 ```bash
-python scraping/convert_to_json.py \
-  --input data/raw/earth911 \
-  --output data/processed/disposal_guides.json
+# Place files in data/processed/:
+#   disposal_guides.json  — required
+#   india_specific.json   — optional but recommended for Indian items
+#   env_facts.json        — optional
+#   product_kb.json       — optional
+
+python scraping/ingest_chromadb.py
+python scraping/test_retrieval.py
 ```
 
-Then run `seed_chromadb` as in Option A.
+### ChromaDB collections
 
-> **Note:** Web scrapers for Earth911 and CPCB PDFs are not included — scraping and sourcing the raw data is left to you. The `convert_to_json.py` script handles the distillation step once you have raw content.
+| Collection | Source | Purpose | Fallback |
+|---|---|---|---|
+| `disposal_guides` | Earth911 + India-specific | How to prepare and dispose each item | Exa.ai search |
+| `env_facts` | Manual / CPCB | Environmental impact stats for motivational facts | Exa.ai search |
+| `product_kb` | Manual | Brand/product-specific disposal notes | None |
 
-The three collections and their purposes:
-
-| Collection | Purpose | Fallback |
-|---|---|---|
-| `disposal_guides` | How to prepare and dispose each item | Exa.ai search |
-| `env_facts` | Environmental impact statistics for motivational facts | Exa.ai search |
-| `product_kb` | Brand/product-specific disposal notes | None |
-
-Similarity threshold: `0.70` — results below this score trigger Exa.ai fallback instead.
+Confidence thresholds (cosine distance): **HIGH** < 0.30 · **MEDIUM** < 0.60 · **LOW** ≥ 0.60  
+Results scoring LOW trigger Exa.ai fallback search.
 
 ---
 
