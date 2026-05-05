@@ -1,0 +1,44 @@
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# LangChain
+langchain==0.3.7
+langchain-groq==0.2.1
+langchain-community==0.3.7
+langchain-core==0.3.19
+
+# LLM APIs
+groq==0.11.0
+google-generativeai==0.8.3
+
+# Vector DB
+chromadb==0.5.20
+sentence-transformers==3.2.1
+
+# Exa Search
+exa-py==1.3.0
+
+# HTTP client (Ollama)
+httpx==0.27.2
+
+# Database
+# sqlite3 is in stdlib
+
+# Pydantic + Settings
+pydantic==2.10.1
+pydantic-settings==2.6.1
+
+# Rate Limiting
+slowapi==0.1.9
+
+# Image processing
+Pillow==11.0.0
+
+# Utilities
+python-dotenv==1.0.1
+aiofiles==24.1.0
+
+# Logging
+structlog==24.4.0

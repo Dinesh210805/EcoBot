@@ -1,0 +1,31 @@
+name,aliases,category,sub_category,bin_color,bin_label,hazardous,recyclable,preparation_steps,safety_notes,special_facility_required
+Newspaper,"[""newspaper"",""paper"",""newsprint""]",dry_waste,paper,blue,Dry Recyclable,0,1,"[""Keep dry"",""Bundle together"",""Remove staples if possible""]",,0
+Cardboard box,"[""cardboard"",""corrugated box"",""carton""]",dry_waste,paper,blue,Dry Recyclable,0,1,"[""Flatten before disposal"",""Remove tape and labels"",""Keep dry""]",,0
+PET water bottle,"[""plastic bottle"",""water bottle"",""PET bottle""]",dry_waste,plastic,blue,Dry Recyclable,0,1,"[""Rinse thoroughly"",""Remove cap and label"",""Crush to save space""]",,0
+HDPE milk can,"[""milk can"",""HDPE container""]",dry_waste,plastic,blue,Dry Recyclable,0,1,"[""Rinse with water"",""Remove cap""]",,0
+Aluminium can,"[""soda can"",""beer can"",""aluminium tin""]",dry_waste,metal,blue,Dry Recyclable,0,1,"[""Rinse"",""Crush flat""]",,0
+Glass bottle,"[""glass jar"",""wine bottle"",""glass container""]",dry_waste,glass,blue,Dry Recyclable,0,1,"[""Rinse"",""Remove metal lid"",""Handle with care""]",,0
+Food scraps,"[""kitchen waste"",""vegetable peels"",""fruit peels"",""leftovers""]",wet_waste,food,green,Wet Waste,0,0,"[""Use compostable bag"",""Drain excess liquid""]",,0
+Garden waste,"[""leaves"",""grass clippings"",""branches"",""plant trimmings""]",wet_waste,garden,green,Wet Waste,0,0,"[""Chop into smaller pieces"",""Keep separate from dry waste""]",,0
+Tea leaves,"[""tea bags"",""coffee grounds""]",wet_waste,food,green,Wet Waste,0,0,"[""Dispose with wet waste""]",,0
+AA battery,"[""alkaline battery"",""dry cell"",""torch battery""]",hazardous,battery,red,Hazardous Waste,1,0,"[""Do not crush"",""Keep away from water"",""Store in original packaging if possible""]",Risk of acid leakage and chemical burns,1
+Lithium battery,"[""laptop battery"",""li-ion battery"",""phone battery""]",hazardous,battery,red,Hazardous Waste,1,0,"[""Do not puncture or crush"",""Tape over terminals"",""Take to e-waste facility""]",Fire risk if damaged; do not throw in general bin,1
+Paint can,"[""house paint"",""wall paint"",""enamel paint""]",hazardous,chemical,red,Hazardous Waste,1,0,"[""Let paint dry completely before disposal"",""Take to hazardous waste facility""]",Contains VOCs; skin and eye irritant,1
+Pesticide bottle,"[""insecticide"",""weedkiller"",""herbicide""]",hazardous,chemical,red,Hazardous Waste,1,0,"[""Never pour down drain"",""Take to authorised hazardous waste facility""]",Toxic to humans and ecosystems,1
+Expired medicine,"[""medicines"",""tablets"",""pills"",""syrups""]",hazardous,pharmaceutical,red,Hazardous Waste,1,0,"[""Do not flush"",""Return to pharmacy take-back programme"",""Mix with coffee grounds before sealing in bag""]",Environmental contamination risk,1
+CFL bulb,"[""fluorescent lamp"",""tube light"",""CFL""]",hazardous,mercury,red,Hazardous Waste,1,0,"[""Handle with care — do not break"",""Place in original packaging"",""Take to e-waste collector""]",Contains mercury; hazardous if broken,1
+Old smartphone,"[""phone"",""mobile"",""android"",""iPhone""]",e_waste,consumer_electronics,red,E-Waste,1,0,"[""Factory reset and delete data"",""Remove SIM and memory card"",""Take to authorised e-waste recycler""]",Contains lithium battery — fire risk if dismantled improperly,1
+Laptop,"[""computer"",""notebook"",""MacBook""]",e_waste,consumer_electronics,red,E-Waste,1,0,"[""Back up and wipe data"",""Remove battery if possible"",""Take to certified e-waste facility""]",Contains hazardous metals; battery fire risk,1
+Charger,"[""mobile charger"",""adapter"",""power brick""]",e_waste,accessories,red,E-Waste,1,0,"[""Coil cable neatly"",""Take to e-waste drop point""]",,1
+Printer ink cartridge,"[""ink cartridge"",""toner""]",e_waste,accessories,red,E-Waste,1,0,"[""Do not empty"",""Return to brand take-back scheme""]",Contains ink chemicals,1
+Sanitary pad,"[""sanitary napkin"",""period pad""]",sanitary,period_hygiene,black,Sanitary Waste,0,0,"[""Wrap in newspaper or paper before disposal"",""Place in black bin or dedicated sanitary bin""]",,0
+Diaper,"[""nappy"",""baby diaper"",""adult diaper""]",sanitary,personal_hygiene,black,Sanitary Waste,0,0,"[""Wrap tightly"",""Dispose in black sanitary bin""]",,0
+Bandage,"[""plaster"",""dressing"",""band-aid""]",sanitary,medical,black,Sanitary Waste,0,0,"[""Seal in bag"",""Dispose in black bin""]",,0
+Brick,"[""concrete"",""cement chunks"",""rubble""]",construction,debris,grey,C&D Waste,0,0,"[""Separate from general waste"",""Contact municipal C&D collection""]",,0
+Ceramic tile,"[""broken tiles"",""mosaic""]",construction,debris,grey,C&D Waste,0,0,"[""Wrap sharp pieces"",""Contact C&D waste collector""]",,0
+Thermocol,"[""styrofoam"",""polystyrene"",""EPS""]",non_recyclable,packaging,grey,Non-Recyclable Reject,0,0,"[""Do not burn"",""Dispose in grey/black reject bin""]",,0
+Soiled food wrapper,"[""oily packet"",""greasy paper"",""dirty foil""]",non_recyclable,contaminated,grey,Non-Recyclable Reject,0,0,"[""Cannot be recycled when soiled"",""Dispose in reject bin""]",,0
+Broken crockery,"[""broken plate"",""broken cup"",""shattered glass""]",non_recyclable,ceramics,grey,Non-Recyclable Reject,0,0,"[""Wrap in newspaper to prevent injury"",""Dispose in reject/general bin""]",,0
+Tetrapak,"[""juice box"",""milk carton"",""tetra pak""]",dry_waste,composite,blue,Dry Recyclable,0,1,"[""Rinse and flatten"",""Some areas accept at dry waste centres""]",,0
+Coconut shell,"[""coconut husk"",""dry coconut""]",wet_waste,organic,green,Wet Waste,0,0,"[""Break into pieces"",""Good for composting""]",,0
+Motor oil,"[""engine oil"",""used oil"",""lubricant""]",hazardous,oil,red,Hazardous Waste,1,0,"[""Never pour down drain"",""Store in sealed container"",""Take to authorised collection point""]",Toxic to water ecosystems; carcinogenic,1

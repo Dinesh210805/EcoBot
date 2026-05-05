@@ -1,0 +1,16 @@
+name,address,city,pincode,latitude,longitude,accepted_categories,operating_hours,contact,verified
+Saahas Zero Waste,No. 31 Rhenius Street,Bengaluru,560025,12.9716,77.5946,"[""dry_waste"",""e_waste"",""hazardous""]",Mon-Sat 9am-6pm,+91-80-41255640,1
+E-Parisaraa,No. 235 A Jigani Industrial Area,Bengaluru,560105,12.7969,77.6469,"[""e_waste""]",Mon-Sat 9am-5pm,+91-80-27832270,1
+Kabadiwalla Connect,Velachery,Chennai,600042,13.0067,80.2206,"[""dry_waste"",""e_waste""]",Mon-Sat 10am-7pm,+91-99404-55855,1
+Karo Sambhav,Andheri East,Mumbai,400069,19.1197,72.8679,"[""e_waste"",""hazardous""]",Mon-Fri 9am-6pm,+91-22-49748888,1
+Stree Mukti Sanghatana,Sion,Mumbai,400022,19.0435,72.8621,"[""dry_waste"",""wet_waste""]",Mon-Sat 8am-5pm,+91-22-24093656,1
+BBMP Dry Waste Collection Centre Koramangala,Koramangala 5th Block,Bengaluru,560095,12.9352,77.6245,"[""dry_waste"",""non_recyclable""]",Mon-Sat 7am-2pm,,1
+MCGM Recycling Centre Dharavi,Dharavi,Mumbai,400017,19.0448,72.8516,"[""dry_waste"",""wet_waste"",""construction""]",Mon-Sat 8am-4pm,+91-22-24043416,1
+Ramky Enviro Engineers,Gachibowli,Hyderabad,500032,17.4401,78.3489,"[""hazardous"",""e_waste"",""sanitary""]",Mon-Fri 9am-6pm,+91-40-23350888,1
+GreenTech Recyclers,Sector 18 Noida,Noida,201301,28.5706,77.3219,"[""e_waste"",""dry_waste""]",Mon-Sat 9am-7pm,+91-120-4567890,1
+ITC WOW,Anna Salai,Chennai,600002,13.0563,80.2637,"[""dry_waste""]",Mon-Sat 9am-6pm,+91-44-28521200,1
+Attero Recycling,Phase 2 Noida,Noida,201305,28.5921,77.3352,"[""e_waste""]",Mon-Fri 9am-5pm,+91-120-6148000,1
+Hazwire E-Waste,Guindy Industrial Estate,Chennai,600032,13.0067,80.2206,"[""e_waste"",""hazardous""]",Mon-Sat 9am-6pm,+91-44-22501234,1
+Puja Enterprises Scrap,Karol Bagh,New Delhi,110005,28.6520,77.1900,"[""dry_waste"",""non_recyclable""]",Mon-Sat 9am-8pm,,0
+Sampurn(e)arth,Indiranagar,Bengaluru,560038,12.9784,77.6408,"[""e_waste""]",Mon-Fri 10am-6pm,+91-80-25214440,1
+Navneet Recyclers,Vile Parle East,Mumbai,400057,19.1001,72.8481,"[""dry_waste"",""wet_waste""]",Mon-Sat 8am-6pm,,0

@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  ecobot:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - EXA_API_KEY=${EXA_API_KEY}
+      - CLASSIFIER_MODE=ollama
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=ecobot-classifier
+      - SQLITE_DB_PATH=/app/data/ecobot.db
+      - CHROMA_DB_PATH=/app/embeddings/chroma_db
+      - UPLOAD_DIR=/app/tmp/uploads
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:5173
+      - LOG_LEVEL=INFO
+    volumes:
+      - ecobot_data:/app/data
+      - ecobot_embeddings:/app/embeddings
+      - ecobot_uploads:/app/tmp/uploads
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/api/v1/health').raise_for_status()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  ecobot_data:
+  ecobot_embeddings:
+  ecobot_uploads:
+  ollama_models:
